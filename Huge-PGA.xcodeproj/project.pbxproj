@@ -17,6 +17,7 @@
 		5A18BBEF23F308C5006205C8 /* HUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A18BBED23F308C5006205C8 /* HUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A18BBF223F308C5006205C8 /* HUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BBEB23F308C5006205C8 /* HUIKit.framework */; };
 		5A18BBF323F308C5006205C8 /* HUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BBEB23F308C5006205C8 /* HUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A18BBFA23F30E6B006205C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBF923F30E6B006205C8 /* LocationManager.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		5A18BBEB23F308C5006205C8 /* HUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A18BBED23F308C5006205C8 /* HUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUIKit.h; sourceTree = "<group>"; };
 		5A18BBEE23F308C5006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A18BBF923F30E6B006205C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		5A18BBDA23F308BC006205C8 /* HFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BBF823F30E5F006205C8 /* LocationManager */,
 				5A18BBDB23F308BC006205C8 /* HFoundation.h */,
 				5A18BBDC23F308BC006205C8 /* Info.plist */,
 			);
@@ -170,6 +173,14 @@
 				5A535FE923F3048A007B3FF1 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A18BBF823F30E5F006205C8 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BBF923F30E6B006205C8 /* LocationManager.swift */,
+			);
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 		5A535FCF23F30488007B3FF1 = {
@@ -309,6 +320,7 @@
 				TargetAttributes = {
 					5A18BBD823F308BC006205C8 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					5A18BBEA23F308C5006205C8 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -433,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BBFA23F30E6B006205C8 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4082E0863D3E6A7F17D4891D /* Pods-Modules-HFoundation.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -503,6 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vladz.HFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -514,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CC4CA9630D47242DA469ACA /* Pods-Modules-HFoundation.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -710,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D05AB8371DB3743E65F7911 /* Pods-Huge-PGA.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CHSEMW6LK;
@@ -729,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE67D8863581C1C96E1F515E /* Pods-Huge-PGA.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CHSEMW6LK;

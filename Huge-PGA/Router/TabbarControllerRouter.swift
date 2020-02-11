@@ -7,6 +7,7 @@
 //
 
 import MERLin
+import HFoundation
 
 class TabBarControllerRouter: Router {
     var viewControllersFactory: ViewControllersFactory?
