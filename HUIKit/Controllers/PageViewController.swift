@@ -26,8 +26,13 @@ open class PageViewController: UIPageViewController {
         super.viewDidLoad()
         dataSource = self
         
-        decoratePageControl()
+        configure(with: items)
+    }
+    
+    public func configure(with items: [UIViewController]) {
+        self.items = items
         
+        decoratePageControl()
         if let firstViewController = items.first {
             setViewControllers([firstViewController],
                                direction: .forward,

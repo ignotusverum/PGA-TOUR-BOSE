@@ -25,4 +25,18 @@ class OnboardingViewController: PageViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    private func bindViewModel() {
+        let states = viewModel.transform(input: actions).publish()
+        
+        states.capture(case: OnboardingState.pages)
+            .asDriverIgnoreError()
+            .drive(onNext: { [weak self] pages in
+                guard let self = self else { return }
+                
+                let controllers = pages.map { OnboardingPageViewController(datasource: $0) }
+                self.configure(with: controllers)
+            })
+            .disposed(by: disposeBag)
+    }
 }
