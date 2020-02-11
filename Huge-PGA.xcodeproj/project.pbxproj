@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A18BBCB23F3060C006205C8 /* AppDelegateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBCA23F3060C006205C8 /* AppDelegateEvents.swift */; };
+		5A18BBCE23F30649006205C8 /* TabbarControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBCD23F30649006205C8 /* TabbarControllerRouter.swift */; };
+		5A18BBD123F306A9006205C8 /* MainRoutingListenerAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBD023F306A9006205C8 /* MainRoutingListenerAggregator.swift */; };
+		5A18BBD323F3071B006205C8 /* AppDelegateRoutingEventsListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBD223F3071B006205C8 /* AppDelegateRoutingEventsListener.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -16,6 +20,10 @@
 /* Begin PBXFileReference section */
 		09C0DE14E211AD38F564C9AD /* Pods_Huge_PGA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Huge_PGA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D05AB8371DB3743E65F7911 /* Pods-Huge-PGA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Huge-PGA.debug.xcconfig"; path = "Target Support Files/Pods-Huge-PGA/Pods-Huge-PGA.debug.xcconfig"; sourceTree = "<group>"; };
+		5A18BBCA23F3060C006205C8 /* AppDelegateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateEvents.swift; sourceTree = "<group>"; };
+		5A18BBCD23F30649006205C8 /* TabbarControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarControllerRouter.swift; sourceTree = "<group>"; };
+		5A18BBD023F306A9006205C8 /* MainRoutingListenerAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoutingListenerAggregator.swift; sourceTree = "<group>"; };
+		5A18BBD223F3071B006205C8 /* AppDelegateRoutingEventsListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRoutingEventsListener.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,9 +53,34 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5A18BBC923F305C8006205C8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5A18BBCC23F3063F006205C8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BBCD23F30649006205C8 /* TabbarControllerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5A18BBCF23F306A1006205C8 /* EventListeners */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BBD023F306A9006205C8 /* MainRoutingListenerAggregator.swift */,
+				5A18BBD223F3071B006205C8 /* AppDelegateRoutingEventsListener.swift */,
+			);
+			path = EventListeners;
+			sourceTree = "<group>";
+		};
 		5A535FCF23F30488007B3FF1 = {
 			isa = PBXGroup;
 			children = (
+				5A18BBC923F305C8006205C8 /* Modules */,
 				5A535FDA23F30488007B3FF1 /* Huge-PGA */,
 				5A535FD923F30488007B3FF1 /* Products */,
 				4CFE99A7FAFD08BB98BDF7EA /* Pods */,
@@ -66,7 +99,10 @@
 		5A535FDA23F30488007B3FF1 /* Huge-PGA */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BBCF23F306A1006205C8 /* EventListeners */,
+				5A18BBCC23F3063F006205C8 /* Router */,
 				5A535FDB23F30488007B3FF1 /* AppDelegate.swift */,
+				5A18BBCA23F3060C006205C8 /* AppDelegateEvents.swift */,
 				5A535FE423F3048A007B3FF1 /* Assets.xcassets */,
 				5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */,
 				5A535FE923F3048A007B3FF1 /* Info.plist */,
@@ -196,7 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BBD123F306A9006205C8 /* MainRoutingListenerAggregator.swift in Sources */,
 				5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */,
+				5A18BBCE23F30649006205C8 /* TabbarControllerRouter.swift in Sources */,
+				5A18BBD323F3071B006205C8 /* AppDelegateRoutingEventsListener.swift in Sources */,
+				5A18BBCB23F3060C006205C8 /* AppDelegateEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "vladz.Huge-PGA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "vladz.Huge-PGA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
