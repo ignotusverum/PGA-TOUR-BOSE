@@ -14,6 +14,12 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Enables the point-to-point navigation feature.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Enables the point-to-point navigation feature.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Enables the point-to-point navigation feature.</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
