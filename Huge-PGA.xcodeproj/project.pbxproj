@@ -11,33 +11,98 @@
 		5A18BBCE23F30649006205C8 /* TabbarControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBCD23F30649006205C8 /* TabbarControllerRouter.swift */; };
 		5A18BBD123F306A9006205C8 /* MainRoutingListenerAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBD023F306A9006205C8 /* MainRoutingListenerAggregator.swift */; };
 		5A18BBD323F3071B006205C8 /* AppDelegateRoutingEventsListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BBD223F3071B006205C8 /* AppDelegateRoutingEventsListener.swift */; };
+		5A18BBDD23F308BC006205C8 /* HFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A18BBDB23F308BC006205C8 /* HFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A18BBE023F308BC006205C8 /* HFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BBD923F308BC006205C8 /* HFoundation.framework */; };
+		5A18BBE123F308BC006205C8 /* HFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BBD923F308BC006205C8 /* HFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A18BBEF23F308C5006205C8 /* HUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A18BBED23F308C5006205C8 /* HUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A18BBF223F308C5006205C8 /* HUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BBEB23F308C5006205C8 /* HUIKit.framework */; };
+		5A18BBF323F308C5006205C8 /* HUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BBEB23F308C5006205C8 /* HUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
+		B9CD320F543B11BD30C256C5 /* Pods_Modules_HFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5BF810BEB6512999E71B25 /* Pods_Modules_HFoundation.framework */; };
 		D0F8DCE4CC39D33CBA6A9A7F /* Pods_Huge_PGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C0DE14E211AD38F564C9AD /* Pods_Huge_PGA.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A18BBDE23F308BC006205C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A535FD023F30488007B3FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A18BBD823F308BC006205C8;
+			remoteInfo = HFoundation;
+		};
+		5A18BBF023F308C5006205C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A535FD023F30488007B3FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A18BBEA23F308C5006205C8;
+			remoteInfo = HUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A18BBE523F308BC006205C8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A18BBF323F308C5006205C8 /* HUIKit.framework in Embed Frameworks */,
+				5A18BBE123F308BC006205C8 /* HFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09C0DE14E211AD38F564C9AD /* Pods_Huge_PGA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Huge_PGA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D05AB8371DB3743E65F7911 /* Pods-Huge-PGA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Huge-PGA.debug.xcconfig"; path = "Target Support Files/Pods-Huge-PGA/Pods-Huge-PGA.debug.xcconfig"; sourceTree = "<group>"; };
+		4082E0863D3E6A7F17D4891D /* Pods-Modules-HFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modules-HFoundation.debug.xcconfig"; path = "Target Support Files/Pods-Modules-HFoundation/Pods-Modules-HFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		4CC4CA9630D47242DA469ACA /* Pods-Modules-HFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modules-HFoundation.release.xcconfig"; path = "Target Support Files/Pods-Modules-HFoundation/Pods-Modules-HFoundation.release.xcconfig"; sourceTree = "<group>"; };
 		5A18BBCA23F3060C006205C8 /* AppDelegateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateEvents.swift; sourceTree = "<group>"; };
 		5A18BBCD23F30649006205C8 /* TabbarControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarControllerRouter.swift; sourceTree = "<group>"; };
 		5A18BBD023F306A9006205C8 /* MainRoutingListenerAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoutingListenerAggregator.swift; sourceTree = "<group>"; };
 		5A18BBD223F3071B006205C8 /* AppDelegateRoutingEventsListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRoutingEventsListener.swift; sourceTree = "<group>"; };
+		5A18BBD923F308BC006205C8 /* HFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A18BBDB23F308BC006205C8 /* HFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFoundation.h; sourceTree = "<group>"; };
+		5A18BBDC23F308BC006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A18BBEB23F308C5006205C8 /* HUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A18BBED23F308C5006205C8 /* HUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUIKit.h; sourceTree = "<group>"; };
+		5A18BBEE23F308C5006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A535FE723F3048A007B3FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A535FE923F3048A007B3FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE67D8863581C1C96E1F515E /* Pods-Huge-PGA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Huge-PGA.release.xcconfig"; path = "Target Support Files/Pods-Huge-PGA/Pods-Huge-PGA.release.xcconfig"; sourceTree = "<group>"; };
+		FE5BF810BEB6512999E71B25 /* Pods_Modules_HFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modules_HFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A18BBD623F308BC006205C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CD320F543B11BD30C256C5 /* Pods_Modules_HFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A18BBE823F308C5006205C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A535FD523F30488007B3FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BBE023F308BC006205C8 /* HFoundation.framework in Frameworks */,
 				D0F8DCE4CC39D33CBA6A9A7F /* Pods_Huge_PGA.framework in Frameworks */,
+				5A18BBF223F308C5006205C8 /* HUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +114,8 @@
 			children = (
 				1D05AB8371DB3743E65F7911 /* Pods-Huge-PGA.debug.xcconfig */,
 				AE67D8863581C1C96E1F515E /* Pods-Huge-PGA.release.xcconfig */,
+				4082E0863D3E6A7F17D4891D /* Pods-Modules-HFoundation.debug.xcconfig */,
+				4CC4CA9630D47242DA469ACA /* Pods-Modules-HFoundation.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -77,11 +144,31 @@
 			path = EventListeners;
 			sourceTree = "<group>";
 		};
+		5A18BBDA23F308BC006205C8 /* HFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BBDB23F308BC006205C8 /* HFoundation.h */,
+				5A18BBDC23F308BC006205C8 /* Info.plist */,
+			);
+			path = HFoundation;
+			sourceTree = "<group>";
+		};
+		5A18BBEC23F308C5006205C8 /* HUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BBED23F308C5006205C8 /* HUIKit.h */,
+				5A18BBEE23F308C5006205C8 /* Info.plist */,
+			);
+			path = HUIKit;
+			sourceTree = "<group>";
+		};
 		5A535FCF23F30488007B3FF1 = {
 			isa = PBXGroup;
 			children = (
 				5A18BBC923F305C8006205C8 /* Modules */,
 				5A535FDA23F30488007B3FF1 /* Huge-PGA */,
+				5A18BBDA23F308BC006205C8 /* HFoundation */,
+				5A18BBEC23F308C5006205C8 /* HUIKit */,
 				5A535FD923F30488007B3FF1 /* Products */,
 				4CFE99A7FAFD08BB98BDF7EA /* Pods */,
 				EFE65AF01C29AEA3BDBC0B54 /* Frameworks */,
@@ -92,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				5A535FD823F30488007B3FF1 /* Huge-PGA.app */,
+				5A18BBD923F308BC006205C8 /* HFoundation.framework */,
+				5A18BBEB23F308C5006205C8 /* HUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,13 +203,70 @@
 			isa = PBXGroup;
 			children = (
 				09C0DE14E211AD38F564C9AD /* Pods_Huge_PGA.framework */,
+				FE5BF810BEB6512999E71B25 /* Pods_Modules_HFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5A18BBD423F308BC006205C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A18BBDD23F308BC006205C8 /* HFoundation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A18BBE623F308C5006205C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A18BBEF23F308C5006205C8 /* HUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5A18BBD823F308BC006205C8 /* HFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A18BBE223F308BC006205C8 /* Build configuration list for PBXNativeTarget "HFoundation" */;
+			buildPhases = (
+				98709E6B22B56D60C6AA8C83 /* [CP] Check Pods Manifest.lock */,
+				5A18BBD423F308BC006205C8 /* Headers */,
+				5A18BBD523F308BC006205C8 /* Sources */,
+				5A18BBD623F308BC006205C8 /* Frameworks */,
+				5A18BBD723F308BC006205C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HFoundation;
+			productName = HFoundation;
+			productReference = 5A18BBD923F308BC006205C8 /* HFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A18BBEA23F308C5006205C8 /* HUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A18BBF423F308C5006205C8 /* Build configuration list for PBXNativeTarget "HUIKit" */;
+			buildPhases = (
+				5A18BBE623F308C5006205C8 /* Headers */,
+				5A18BBE723F308C5006205C8 /* Sources */,
+				5A18BBE823F308C5006205C8 /* Frameworks */,
+				5A18BBE923F308C5006205C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUIKit;
+			productName = HUIKit;
+			productReference = 5A18BBEB23F308C5006205C8 /* HUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5A535FD723F30488007B3FF1 /* Huge-PGA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A535FEC23F3048A007B3FF1 /* Build configuration list for PBXNativeTarget "Huge-PGA" */;
@@ -130,10 +276,13 @@
 				5A535FD523F30488007B3FF1 /* Frameworks */,
 				5A535FD623F30488007B3FF1 /* Resources */,
 				202991D48B80B29066E16636 /* [CP] Embed Pods Frameworks */,
+				5A18BBE523F308BC006205C8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A18BBDF23F308BC006205C8 /* PBXTargetDependency */,
+				5A18BBF123F308C5006205C8 /* PBXTargetDependency */,
 			);
 			name = "Huge-PGA";
 			productName = "Huge-PGA";
@@ -150,6 +299,12 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Vlad Z.";
 				TargetAttributes = {
+					5A18BBD823F308BC006205C8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5A18BBEA23F308C5006205C8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					5A535FD723F30488007B3FF1 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -169,11 +324,27 @@
 			projectRoot = "";
 			targets = (
 				5A535FD723F30488007B3FF1 /* Huge-PGA */,
+				5A18BBEA23F308C5006205C8 /* HUIKit */,
+				5A18BBD823F308BC006205C8 /* HFoundation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A18BBD723F308BC006205C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A18BBE923F308C5006205C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A535FD623F30488007B3FF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +374,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Huge-PGA/Pods-Huge-PGA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		98709E6B22B56D60C6AA8C83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Modules-HFoundation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EC314007FAAE536A91F1A7B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +421,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A18BBD523F308BC006205C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A18BBE723F308C5006205C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A535FD423F30488007B3FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +449,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5A18BBDF23F308BC006205C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A18BBD823F308BC006205C8 /* HFoundation */;
+			targetProxy = 5A18BBDE23F308BC006205C8 /* PBXContainerItemProxy */;
+		};
+		5A18BBF123F308C5006205C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A18BBEA23F308C5006205C8 /* HUIKit */;
+			targetProxy = 5A18BBF023F308C5006205C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -254,6 +474,116 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5A18BBE323F308BC006205C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4082E0863D3E6A7F17D4891D /* Pods-Modules-HFoundation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9CHSEMW6LK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vladz.HFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A18BBE423F308BC006205C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC4CA9630D47242DA469ACA /* Pods-Modules-HFoundation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9CHSEMW6LK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vladz.HFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A18BBF523F308C5006205C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9CHSEMW6LK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vladz.HUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A18BBF623F308C5006205C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9CHSEMW6LK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vladz.HUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5A535FEA23F3048A007B3FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -409,6 +739,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A18BBE223F308BC006205C8 /* Build configuration list for PBXNativeTarget "HFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A18BBE323F308BC006205C8 /* Debug */,
+				5A18BBE423F308BC006205C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A18BBF423F308C5006205C8 /* Build configuration list for PBXNativeTarget "HUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A18BBF523F308C5006205C8 /* Debug */,
+				5A18BBF623F308C5006205C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5A535FD323F30488007B3FF1 /* Build configuration list for PBXProject "Huge-PGA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

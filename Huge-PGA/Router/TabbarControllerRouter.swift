@@ -31,7 +31,6 @@ class TabBarControllerRouter: Router {
         let matchesNavigationController = UINavigationController(rootViewController: UIViewController())
         tabbarController.viewControllers = [matchesNavigationController]
         
-        /// TODO: Add some kind of initial splash screen to follow this logic, could be A/B Tests
         AppDelegate.shared.window?.transitionToRootController(tabbarController)
         
         return tabbarController

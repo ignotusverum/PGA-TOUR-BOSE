@@ -16,5 +16,6 @@ end
 abstract_target 'Modules' do
   common
   
+  target 'HFoundation'
 end
 
