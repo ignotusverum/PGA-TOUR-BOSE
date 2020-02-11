@@ -23,6 +23,13 @@
 		5A18BC0823F310D4006205C8 /* OnboardingModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC0023F310D4006205C8 /* OnboardingModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A18BC0D23F34BDB006205C8 /* OnboardingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */; };
 		5A18BC0F23F34D03006205C8 /* OnboardingDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */; };
+		5A18BC1723F35180006205C8 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1623F35180006205C8 /* OnboardingState.swift */; };
+		5A18BC1923F35188006205C8 /* OnboardingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1823F35188006205C8 /* OnboardingActions.swift */; };
+		5A18BC1B23F35190006205C8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1A23F35190006205C8 /* OnboardingViewModel.swift */; };
+		5A18BC1D23F35199006205C8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1C23F35199006205C8 /* OnboardingViewController.swift */; };
+		5A18BC2223F351C0006205C8 /* weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2123F351C0006205C8 /* weakify.swift */; };
+		5A18BC2423F351C8006205C8 /* ConfigureOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2323F351C8006205C8 /* ConfigureOperator.swift */; };
+		5A18BC2623F351E5006205C8 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2523F351E5006205C8 /* ObservableType.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -101,6 +108,13 @@
 		5A18BC0323F310D4006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModule.swift; sourceTree = "<group>"; };
 		5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDatasource.swift; sourceTree = "<group>"; };
+		5A18BC1623F35180006205C8 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		5A18BC1823F35188006205C8 /* OnboardingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingActions.swift; sourceTree = "<group>"; };
+		5A18BC1A23F35190006205C8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		5A18BC1C23F35199006205C8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5A18BC2123F351C0006205C8 /* weakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weakify.swift; sourceTree = "<group>"; };
+		5A18BC2323F351C8006205C8 /* ConfigureOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureOperator.swift; sourceTree = "<group>"; };
+		5A18BC2523F351E5006205C8 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -190,6 +204,7 @@
 		5A18BBDA23F308BC006205C8 /* HFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BC1E23F351A1006205C8 /* Extensions */,
 				5A18BBF823F30E5F006205C8 /* LocationManager */,
 				5A18BBDB23F308BC006205C8 /* HFoundation.h */,
 				5A18BBDC23F308BC006205C8 /* Info.plist */,
@@ -230,9 +245,71 @@
 				5A18BC0323F310D4006205C8 /* Info.plist */,
 				5A18BC0223F310D4006205C8 /* OnboardingModule.h */,
 				5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */,
-				5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */,
+				5A18BC1223F3510E006205C8 /* Onboarding */,
 			);
 			path = OnboardingModule;
+			sourceTree = "<group>";
+		};
+		5A18BC1223F3510E006205C8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC1323F3511F006205C8 /* Model */,
+				5A18BC1523F35128006205C8 /* View */,
+				5A18BC1423F35123006205C8 /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5A18BC1323F3511F006205C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A18BC1423F35123006205C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC1623F35180006205C8 /* OnboardingState.swift */,
+				5A18BC1823F35188006205C8 /* OnboardingActions.swift */,
+				5A18BC1A23F35190006205C8 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5A18BC1523F35128006205C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC1C23F35199006205C8 /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A18BC1E23F351A1006205C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC2023F351B4006205C8 /* Rx */,
+				5A18BC1F23F351AE006205C8 /* Functional */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A18BC1F23F351AE006205C8 /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC2123F351C0006205C8 /* weakify.swift */,
+				5A18BC2323F351C8006205C8 /* ConfigureOperator.swift */,
+			);
+			path = Functional;
+			sourceTree = "<group>";
+		};
+		5A18BC2023F351B4006205C8 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC2523F351E5006205C8 /* ObservableType.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		5A535FCF23F30488007B3FF1 = {
@@ -562,6 +639,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BC2423F351C8006205C8 /* ConfigureOperator.swift in Sources */,
+				5A18BC2223F351C0006205C8 /* weakify.swift in Sources */,
+				5A18BC2623F351E5006205C8 /* ObservableType.swift in Sources */,
 				5A18BBFA23F30E6B006205C8 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,7 +657,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BC1B23F35190006205C8 /* OnboardingViewModel.swift in Sources */,
+				5A18BC1D23F35199006205C8 /* OnboardingViewController.swift in Sources */,
+				5A18BC1723F35180006205C8 /* OnboardingState.swift in Sources */,
 				5A18BC0D23F34BDB006205C8 /* OnboardingModule.swift in Sources */,
+				5A18BC1923F35188006205C8 /* OnboardingActions.swift in Sources */,
 				5A18BC0F23F34D03006205C8 /* OnboardingDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

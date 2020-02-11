@@ -18,14 +18,11 @@ public enum OnboardingDatasourceType {
 public struct OnboardingButtonDatasource {
     var title: String
     var image: UIImage?
-    var handleTap: PublishSubject<Void>
     
     public init(title: String,
-                image: UIImage? = nil,
-                handleTap: PublishSubject<Void> = PublishSubject()) {
+                image: UIImage? = nil) {
         self.title = title
         self.image = image
-        self.handleTap = handleTap
     }
 }
 
