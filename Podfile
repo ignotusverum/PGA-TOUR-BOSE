@@ -17,5 +17,6 @@ abstract_target 'Modules' do
   common
   
   target 'HFoundation'
+  target 'OnboardingModule'
 end
 
