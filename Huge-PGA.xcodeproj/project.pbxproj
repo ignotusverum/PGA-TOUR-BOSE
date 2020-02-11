@@ -21,6 +21,8 @@
 		5A18BC0423F310D4006205C8 /* OnboardingModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A18BC0223F310D4006205C8 /* OnboardingModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A18BC0723F310D4006205C8 /* OnboardingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC0023F310D4006205C8 /* OnboardingModule.framework */; };
 		5A18BC0823F310D4006205C8 /* OnboardingModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC0023F310D4006205C8 /* OnboardingModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A18BC0D23F34BDB006205C8 /* OnboardingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */; };
+		5A18BC0F23F34D03006205C8 /* OnboardingDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -50,6 +52,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5A18BBFF23F310D4006205C8;
 			remoteInfo = OnboardingModule;
+		};
+		5A18BC1023F34D1F006205C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A535FD023F30488007B3FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A18BBD823F308BC006205C8;
+			remoteInfo = HFoundation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -90,6 +99,8 @@
 		5A18BC0023F310D4006205C8 /* OnboardingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnboardingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A18BC0223F310D4006205C8 /* OnboardingModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingModule.h; sourceTree = "<group>"; };
 		5A18BC0323F310D4006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModule.swift; sourceTree = "<group>"; };
+		5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDatasource.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -216,8 +227,10 @@
 		5A18BC0123F310D4006205C8 /* OnboardingModule */ = {
 			isa = PBXGroup;
 			children = (
-				5A18BC0223F310D4006205C8 /* OnboardingModule.h */,
 				5A18BC0323F310D4006205C8 /* Info.plist */,
+				5A18BC0223F310D4006205C8 /* OnboardingModule.h */,
+				5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */,
+				5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */,
 			);
 			path = OnboardingModule;
 			sourceTree = "<group>";
@@ -348,6 +361,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5A18BC1123F34D1F006205C8 /* PBXTargetDependency */,
 			);
 			name = OnboardingModule;
 			productName = OnboardingModule;
@@ -396,6 +410,7 @@
 					};
 					5A18BBFF23F310D4006205C8 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					5A535FD723F30488007B3FF1 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -562,6 +577,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BC0D23F34BDB006205C8 /* OnboardingModule.swift in Sources */,
+				5A18BC0F23F34D03006205C8 /* OnboardingDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +611,11 @@
 			isa = PBXTargetDependency;
 			target = 5A18BBFF23F310D4006205C8 /* OnboardingModule */;
 			targetProxy = 5A18BC0523F310D4006205C8 /* PBXContainerItemProxy */;
+		};
+		5A18BC1123F34D1F006205C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A18BBD823F308BC006205C8 /* HFoundation */;
+			targetProxy = 5A18BC1023F34D1F006205C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 426A5BE55DD49EE7F5A2DB53 /* Pods-Modules-OnboardingModule.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -743,6 +766,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vladz.OnboardingModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -754,6 +778,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AB1CF822FCC1361CE9C8FC5 /* Pods-Modules-OnboardingModule.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -899,13 +924,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9CHSEMW6LK;
+				DEVELOPMENT_TEAM = 2N8DEAPWPF;
 				INFOPLIST_FILE = "Huge-PGA/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "vladz.Huge-PGA";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huge.bose-pga";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -919,13 +944,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9CHSEMW6LK;
+				DEVELOPMENT_TEAM = 2N8DEAPWPF;
 				INFOPLIST_FILE = "Huge-PGA/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "vladz.Huge-PGA";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huge.bose-pga";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
