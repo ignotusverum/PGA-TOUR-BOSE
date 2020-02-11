@@ -18,5 +18,6 @@ abstract_target 'Modules' do
   
   target 'HFoundation'
   target 'OnboardingModule'
+  target 'PageContainerModule'
 end
 

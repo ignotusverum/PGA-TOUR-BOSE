@@ -13,10 +13,10 @@ public class OnboardingModuleContext: ModuleContextProtocol {
     public typealias ModuleType = OnboardingModule
     public var routingContext: String
     
-    public var datasource: [OnboardingDatasource]
+    public var datasource: [OnboardingPage]
     
     public init(routingContext: String,
-                datasource: [OnboardingDatasource]) {
+                datasource: [OnboardingPage]) {
         self.datasource = datasource
         self.routingContext = routingContext
     }
@@ -28,7 +28,7 @@ public class OnboardingModuleContext: ModuleContextProtocol {
 }
 
 public enum OnboardingModuleEvents: EventProtocol {
-    case onboardingActionTapped(OnboardingDatasourceType)
+    case actionTypeTapped(OnboardingDatasourceType)
 }
 
 public class OnboardingModule: ModuleProtocol, EventsProducer {

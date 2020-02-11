@@ -22,7 +22,7 @@
 		5A18BC0723F310D4006205C8 /* OnboardingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC0023F310D4006205C8 /* OnboardingModule.framework */; };
 		5A18BC0823F310D4006205C8 /* OnboardingModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC0023F310D4006205C8 /* OnboardingModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A18BC0D23F34BDB006205C8 /* OnboardingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */; };
-		5A18BC0F23F34D03006205C8 /* OnboardingDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */; };
+		5A18BC0F23F34D03006205C8 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC0E23F34D03006205C8 /* OnboardingPage.swift */; };
 		5A18BC1723F35180006205C8 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1623F35180006205C8 /* OnboardingState.swift */; };
 		5A18BC1923F35188006205C8 /* OnboardingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1823F35188006205C8 /* OnboardingActions.swift */; };
 		5A18BC1B23F35190006205C8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC1A23F35190006205C8 /* OnboardingViewModel.swift */; };
@@ -30,6 +30,12 @@
 		5A18BC2223F351C0006205C8 /* weakify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2123F351C0006205C8 /* weakify.swift */; };
 		5A18BC2423F351C8006205C8 /* ConfigureOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2323F351C8006205C8 /* ConfigureOperator.swift */; };
 		5A18BC2623F351E5006205C8 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2523F351E5006205C8 /* ObservableType.swift */; };
+		5A18BC2923F356FC006205C8 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2723F35251006205C8 /* OnboardingModel.swift */; };
+		5A18BC2F23F360EF006205C8 /* UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2E23F360EF006205C8 /* UIPageControl.swift */; };
+		5A18BC3123F3616E006205C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC2B23F35CE0006205C8 /* PageViewController.swift */; };
+		5A18BC4D23F36679006205C8 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC4C23F36679006205C8 /* OnboardingPageViewController.swift */; };
+		5A18BC5023F36C7D006205C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A18BC4F23F36C7D006205C8 /* Assets.xcassets */; };
+		5A18BC5523F36DDE006205C8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5423F36DDE006205C8 /* Assets.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -107,7 +113,7 @@
 		5A18BC0223F310D4006205C8 /* OnboardingModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingModule.h; sourceTree = "<group>"; };
 		5A18BC0323F310D4006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModule.swift; sourceTree = "<group>"; };
-		5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDatasource.swift; sourceTree = "<group>"; };
+		5A18BC0E23F34D03006205C8 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		5A18BC1623F35180006205C8 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		5A18BC1823F35188006205C8 /* OnboardingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingActions.swift; sourceTree = "<group>"; };
 		5A18BC1A23F35190006205C8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -115,13 +121,22 @@
 		5A18BC2123F351C0006205C8 /* weakify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weakify.swift; sourceTree = "<group>"; };
 		5A18BC2323F351C8006205C8 /* ConfigureOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureOperator.swift; sourceTree = "<group>"; };
 		5A18BC2523F351E5006205C8 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		5A18BC2723F35251006205C8 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		5A18BC2B23F35CE0006205C8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5A18BC2E23F360EF006205C8 /* UIPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControl.swift; sourceTree = "<group>"; };
+		5A18BC4C23F36679006205C8 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		5A18BC4F23F36C7D006205C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A18BC5423F36DDE006205C8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A535FE723F3048A007B3FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A535FE923F3048A007B3FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AB1CF822FCC1361CE9C8FC5 /* Pods-Modules-OnboardingModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modules-OnboardingModule.release.xcconfig"; path = "Target Support Files/Pods-Modules-OnboardingModule/Pods-Modules-OnboardingModule.release.xcconfig"; sourceTree = "<group>"; };
+		8C0FD017C23DFE89809503A1 /* Pods-Modules-PageContainerModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modules-PageContainerModule.debug.xcconfig"; path = "Target Support Files/Pods-Modules-PageContainerModule/Pods-Modules-PageContainerModule.debug.xcconfig"; sourceTree = "<group>"; };
 		AE67D8863581C1C96E1F515E /* Pods-Huge-PGA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Huge-PGA.release.xcconfig"; path = "Target Support Files/Pods-Huge-PGA/Pods-Huge-PGA.release.xcconfig"; sourceTree = "<group>"; };
+		B832CDDC88B508B10D67EBE5 /* Pods_Modules_PageContainerModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modules_PageContainerModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BA5471D5F3E012E4F48012 /* Pods-Modules-PageContainerModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modules-PageContainerModule.release.xcconfig"; path = "Target Support Files/Pods-Modules-PageContainerModule/Pods-Modules-PageContainerModule.release.xcconfig"; sourceTree = "<group>"; };
 		FE5BF810BEB6512999E71B25 /* Pods_Modules_HFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modules_HFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -172,6 +187,8 @@
 				4CC4CA9630D47242DA469ACA /* Pods-Modules-HFoundation.release.xcconfig */,
 				426A5BE55DD49EE7F5A2DB53 /* Pods-Modules-OnboardingModule.debug.xcconfig */,
 				7AB1CF822FCC1361CE9C8FC5 /* Pods-Modules-OnboardingModule.release.xcconfig */,
+				8C0FD017C23DFE89809503A1 /* Pods-Modules-PageContainerModule.debug.xcconfig */,
+				D1BA5471D5F3E012E4F48012 /* Pods-Modules-PageContainerModule.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -215,6 +232,8 @@
 		5A18BBEC23F308C5006205C8 /* HUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BC2D23F360E7006205C8 /* Extensions */,
+				5A18BC2A23F35CD4006205C8 /* Controllers */,
 				5A18BBED23F308C5006205C8 /* HUIKit.h */,
 				5A18BBEE23F308C5006205C8 /* Info.plist */,
 			);
@@ -245,6 +264,7 @@
 				5A18BC0323F310D4006205C8 /* Info.plist */,
 				5A18BC0223F310D4006205C8 /* OnboardingModule.h */,
 				5A18BC0C23F34BDB006205C8 /* OnboardingModule.swift */,
+				5A18BC4E23F36C61006205C8 /* Resources */,
 				5A18BC1223F3510E006205C8 /* Onboarding */,
 			);
 			path = OnboardingModule;
@@ -263,7 +283,8 @@
 		5A18BC1323F3511F006205C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5A18BC0E23F34D03006205C8 /* OnboardingDatasource.swift */,
+				5A18BC0E23F34D03006205C8 /* OnboardingPage.swift */,
+				5A18BC2723F35251006205C8 /* OnboardingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				5A18BC1C23F35199006205C8 /* OnboardingViewController.swift */,
+				5A18BC4C23F36679006205C8 /* OnboardingPageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +332,31 @@
 				5A18BC2523F351E5006205C8 /* ObservableType.swift */,
 			);
 			path = Rx;
+			sourceTree = "<group>";
+		};
+		5A18BC2A23F35CD4006205C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC2B23F35CE0006205C8 /* PageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A18BC2D23F360E7006205C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC2E23F360EF006205C8 /* UIPageControl.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A18BC4E23F36C61006205C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC5423F36DDE006205C8 /* Assets.swift */,
+				5A18BC4F23F36C7D006205C8 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5A535FCF23F30488007B3FF1 = {
@@ -354,6 +401,7 @@
 				09C0DE14E211AD38F564C9AD /* Pods_Huge_PGA.framework */,
 				FE5BF810BEB6512999E71B25 /* Pods_Modules_HFoundation.framework */,
 				291D810397B368F2FEBC1060 /* Pods_Modules_OnboardingModule.framework */,
+				B832CDDC88B508B10D67EBE5 /* Pods_Modules_PageContainerModule.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -429,6 +477,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A18BC0923F310D5006205C8 /* Build configuration list for PBXNativeTarget "OnboardingModule" */;
 			buildPhases = (
+				5A18BC5123F36CBF006205C8 /* swiftgen */,
 				8129BD8F3510460E61A3A91B /* [CP] Check Pods Manifest.lock */,
 				5A18BBFB23F310D4006205C8 /* Headers */,
 				5A18BBFC23F310D4006205C8 /* Sources */,
@@ -449,6 +498,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A535FEC23F3048A007B3FF1 /* Build configuration list for PBXNativeTarget "Huge-PGA" */;
 			buildPhases = (
+				5A18BC5323F36D16006205C8 /* swiftgen */,
 				EC314007FAAE536A91F1A7B8 /* [CP] Check Pods Manifest.lock */,
 				5A535FD423F30488007B3FF1 /* Sources */,
 				5A535FD523F30488007B3FF1 /* Frameworks */,
@@ -484,6 +534,7 @@
 					};
 					5A18BBEA23F308C5006205C8 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					5A18BBFF23F310D4006205C8 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -534,6 +585,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BC5023F36C7D006205C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +617,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Huge-PGA/Pods-Huge-PGA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5A18BC5123F36CBF006205C8 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"$SRCROOT\"/Scripts/swiftgen.sh\n";
+		};
+		5A18BC5323F36D16006205C8 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "template=\"$SRCROOT\"/Scripts/swiftGenTemplate\nswiftgen=\"$PODS_ROOT\"/SwiftGen/bin/swiftgen\nresources=\"$SOURCE_ROOT\"/Huge-PGA/Resources\n\n\"$swiftgen\" xcassets -t swift4 \"$resources\"/Assets.xcassets --output \"$resources\"/Assets.swift\n";
 		};
 		8129BD8F3510460E61A3A91B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -650,6 +738,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BC2F23F360EF006205C8 /* UIPageControl.swift in Sources */,
+				5A18BC3123F3616E006205C8 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,8 +751,11 @@
 				5A18BC1D23F35199006205C8 /* OnboardingViewController.swift in Sources */,
 				5A18BC1723F35180006205C8 /* OnboardingState.swift in Sources */,
 				5A18BC0D23F34BDB006205C8 /* OnboardingModule.swift in Sources */,
+				5A18BC4D23F36679006205C8 /* OnboardingPageViewController.swift in Sources */,
+				5A18BC2923F356FC006205C8 /* OnboardingModel.swift in Sources */,
 				5A18BC1923F35188006205C8 /* OnboardingActions.swift in Sources */,
-				5A18BC0F23F34D03006205C8 /* OnboardingDatasource.swift in Sources */,
+				5A18BC0F23F34D03006205C8 /* OnboardingPage.swift in Sources */,
+				5A18BC5523F36DDE006205C8 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +870,7 @@
 		5A18BBF523F308C5006205C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -794,6 +888,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vladz.HUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -804,6 +899,7 @@
 		5A18BBF623F308C5006205C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

@@ -6,4 +6,16 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import Foundation
+import MERLin
+import HFoundation
+
+enum OnboardingUIAction: EventProtocol {
+    case actionTypeTapped(OnboardingDatasourceType)
+}
+
+enum OnboardingModelAction: EventProtocol { }
+
+enum OnboardingActions: EventProtocol {
+    case ui(OnboardingUIAction)
+    case model(OnboardingModelAction)
+}

@@ -15,7 +15,7 @@ public enum OnboardingDatasourceType {
     case confirm
 }
 
-public struct OnboardingButtonDatasource {
+public struct OnboardingButtonDatasource: Equatable {
     var title: String
     var image: UIImage?
     
@@ -26,7 +26,7 @@ public struct OnboardingButtonDatasource {
     }
 }
 
-public struct OnboardingDatasource {
+public struct OnboardingPage: Equatable {
     var title: String
     var image: UIImage
     var details: String?
