@@ -34,9 +34,12 @@ class OnboardingViewController: PageViewController {
             .drive(onNext: { [weak self] pages in
                 guard let self = self else { return }
                 
-                let controllers = pages.map { OnboardingPageViewController(datasource: $0) }
+                let controllers = pages.map(OnboardingPageViewController.init)
                 self.configure(with: controllers)
             })
+            .disposed(by: disposeBag)
+        
+        states.connect()
             .disposed(by: disposeBag)
     }
 }

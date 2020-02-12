@@ -11,6 +11,7 @@ import HFoundation
 
 enum OnboardingState: CaseAccessible, Equatable {
     case pages([OnboardingPage])
+    
     static func reduce(_ state: OnboardingState,
                        action: OnboardingUIAction)-> OnboardingState {
         switch (state, action) {

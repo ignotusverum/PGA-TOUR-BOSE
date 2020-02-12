@@ -9,7 +9,7 @@
 import MERLin
 
 struct OnboardingModel {
-    private var onboardingDatasource: [OnboardingPage] {
+    var pages: [OnboardingPage] {
         [
             OnboardingPage(title: "Take your PGA Tour experience to the next level.",
                            image: Asset.iconGlasses.image,
