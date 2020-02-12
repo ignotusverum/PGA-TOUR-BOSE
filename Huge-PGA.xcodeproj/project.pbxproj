@@ -52,6 +52,13 @@
 		5A18BC8223F45E34006205C8 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8123F45E34006205C8 /* UIColor+Theme.swift */; };
 		5A18BC8423F45E39006205C8 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8323F45E39006205C8 /* UIFont+Theme.swift */; };
 		5A18BC8623F45E3F006205C8 /* UILabel+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8523F45E3F006205C8 /* UILabel+Theme.swift */; };
+		5A18BC8C23F45F2C006205C8 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A18BC8923F45F2B006205C8 /* RobotoCondensed-Light.ttf */; };
+		5A18BC8D23F45F2C006205C8 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A18BC8A23F45F2B006205C8 /* RobotoCondensed-Bold.ttf */; };
+		5A18BC8E23F45F2C006205C8 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A18BC8B23F45F2B006205C8 /* RobotoCondensed-Regular.ttf */; };
+		5A18BC9023F45F55006205C8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8F23F45F55006205C8 /* Fonts.swift */; };
+		5A18BC9323F45F6E006205C8 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC9223F45F6E006205C8 /* UIFontExtension.swift */; };
+		5A18BC9523F45FF5006205C8 /* UIButton+Setters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC9423F45FF5006205C8 /* UIButton+Setters.swift */; };
+		5A18BC9723F46046006205C8 /* GlobalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC9623F46046006205C8 /* GlobalTheme.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -167,6 +174,13 @@
 		5A18BC8123F45E34006205C8 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		5A18BC8323F45E39006205C8 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
 		5A18BC8523F45E3F006205C8 /* UILabel+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Theme.swift"; sourceTree = "<group>"; };
+		5A18BC8923F45F2B006205C8 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		5A18BC8A23F45F2B006205C8 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		5A18BC8B23F45F2B006205C8 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		5A18BC8F23F45F55006205C8 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5A18BC9223F45F6E006205C8 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		5A18BC9423F45FF5006205C8 /* UIButton+Setters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Setters.swift"; sourceTree = "<group>"; };
+		5A18BC9623F46046006205C8 /* GlobalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTheme.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -452,6 +466,36 @@
 			path = "UIKit+Theme";
 			sourceTree = "<group>";
 		};
+		5A18BC8723F45F19006205C8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC9123F45F67006205C8 /* Helpers */,
+				5A18BC8823F45F1F006205C8 /* Fonts */,
+				5A18BC9623F46046006205C8 /* GlobalTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		5A18BC8823F45F1F006205C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC8F23F45F55006205C8 /* Fonts.swift */,
+				5A18BC8A23F45F2B006205C8 /* RobotoCondensed-Bold.ttf */,
+				5A18BC8923F45F2B006205C8 /* RobotoCondensed-Light.ttf */,
+				5A18BC8B23F45F2B006205C8 /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5A18BC9123F45F67006205C8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC9223F45F6E006205C8 /* UIFontExtension.swift */,
+				5A18BC9423F45FF5006205C8 /* UIButton+Setters.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5A535FCF23F30488007B3FF1 = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +525,7 @@
 		5A535FDA23F30488007B3FF1 /* Huge-PGA */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BC8723F45F19006205C8 /* Theme */,
 				5A18BC5D23F4532E006205C8 /* Routes */,
 				5A18BBCF23F306A1006205C8 /* EventListeners */,
 				5A18BBCC23F3063F006205C8 /* Router */,
@@ -729,6 +774,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */,
+				5A18BC8C23F45F2C006205C8 /* RobotoCondensed-Light.ttf in Resources */,
+				5A18BC8D23F45F2C006205C8 /* RobotoCondensed-Bold.ttf in Resources */,
+				5A18BC8E23F45F2C006205C8 /* RobotoCondensed-Regular.ttf in Resources */,
 				5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -787,7 +835,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "template=\"$SRCROOT\"/Scripts/swiftGenTemplate\nswiftgen=\"$PODS_ROOT\"/SwiftGen/bin/swiftgen\nresources=\"$SOURCE_ROOT\"/Huge-PGA/Resources\n\n\"$swiftgen\" xcassets -t swift4 \"$resources\"/Assets.xcassets --output \"$resources\"/Assets.swift\n";
+			shellScript = "template=\"$SRCROOT\"/Scripts/swiftGenTemplate\nswiftgen=\"$PODS_ROOT\"/SwiftGen/bin/swiftgen\nresources=\"$SOURCE_ROOT\"/Huge-PGA/Resources\n\n\"$swiftgen\" xcassets -t swift4 \"$resources\"/Assets.xcassets --output \"$resources\"/Assets.swift\n\"$swiftgen\" fonts -t swift4 \"$SOURCE_ROOT\"/Huge-PGA/Theme/Fonts --output \"$SOURCE_ROOT\"/Huge-PGA/Theme/Fonts/Fonts.swift\n";
 		};
 		8129BD8F3510460E61A3A91B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -916,8 +964,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A18BC9023F45F55006205C8 /* Fonts.swift in Sources */,
+				5A18BC9323F45F6E006205C8 /* UIFontExtension.swift in Sources */,
+				5A18BC9723F46046006205C8 /* GlobalTheme.swift in Sources */,
 				5A18BBD123F306A9006205C8 /* MainRoutingListenerAggregator.swift in Sources */,
 				5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */,
+				5A18BC9523F45FF5006205C8 /* UIButton+Setters.swift in Sources */,
 				5A18BC5C23F45321006205C8 /* OnboardingListener.swift in Sources */,
 				5A18BBCE23F30649006205C8 /* TabbarControllerRouter.swift in Sources */,
 				5A18BBD323F3071B006205C8 /* AppDelegateRoutingEventsListener.swift in Sources */,

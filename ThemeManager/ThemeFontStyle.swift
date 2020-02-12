@@ -14,6 +14,7 @@ public enum ThemeFontAttribute: String, CaseIterable {
 public enum ThemeFontStyle: CaseIterable {
     case small(attribute: ThemeFontAttribute)
     case subtitle(attribute: ThemeFontAttribute)
+    case headline(attribute: ThemeFontAttribute)
     case title(attribute: ThemeFontAttribute)
     case navigationTitle(attribute: ThemeFontAttribute)
     
@@ -22,6 +23,7 @@ public enum ThemeFontStyle: CaseIterable {
         case let .small(attribute),
              let .subtitle(attribute),
              let .title(attribute),
+             let .headline(attribute),
              let .navigationTitle(attribute): return attribute
         }
     }
@@ -31,6 +33,7 @@ public enum ThemeFontStyle: CaseIterable {
             [
                 .small(attribute: $0),
                 .subtitle(attribute: $0),
+                .headline(attribute: $0),
                 .title(attribute: $0),
                 .navigationTitle(attribute: $0)
             ]

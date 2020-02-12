@@ -99,5 +99,3 @@ public extension UIColor {
         return selfR == r && selfG == g && selfB == b
     }
 }
-
-
