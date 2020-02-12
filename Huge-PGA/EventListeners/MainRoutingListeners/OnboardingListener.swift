@@ -21,7 +21,11 @@ class OnboardingListener: ModuleEventsListener {
         events.capture(case: OnboardingRouteEvent.actionTypeTapped)
             .toRoutableObservable()
             .subscribe(onNext: { pageType in
-                print("pageType - \(pageType)")
+                switch pageType {
+                case .location:
+                    LocationManager.requestPermissions()
+                case .bluetooth, .confirm: print("[DEBUG] - \(pageType) not handled")
+                }
             })
             .disposed(by: module.disposeBag)
         

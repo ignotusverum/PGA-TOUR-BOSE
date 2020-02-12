@@ -48,7 +48,7 @@ private extension ThemeFontStyle {
     var fontSize: CGFloat {
         switch self {
         case .small: return 11
-        case .title: return 13
+        case .title: return 18
         case .subtitle: return 15
         case .headline: return 30
         case .navigationTitle: return 20

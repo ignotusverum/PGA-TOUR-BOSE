@@ -67,11 +67,12 @@ class OnboardingViewController: PageViewController {
     private func bindViewModel() {
         let states = viewModel.transform(input: actions).publish()
         states.capture(case: OnboardingState.pages)
+            .take(1)
             .asDriverIgnoreError()
             .drive(onNext: { [weak self] pages in
                 guard let self = self else { return }
                 
-                let controllers = pages.map(OnboardingPageViewController.init)
+                let controllers = pages.map { OnboardingPageViewController($0, actions: self.actions) }
                 self.configure(with: controllers)
             })
             .disposed(by: disposeBag)

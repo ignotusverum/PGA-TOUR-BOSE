@@ -9,8 +9,8 @@
 import UIKit
 
 import ThemeManager
-import Hero
 import HFoundation
+import MERLin
 
 enum OnboardingComponentType: Int {
     case title
@@ -19,13 +19,18 @@ enum OnboardingComponentType: Int {
 }
 
 class OnboardingPageViewController: UIViewController {
+    let disposeBag = DisposeBag()
     var page: OnboardingPage
+    var actions: PublishSubject<OnboardingUIAction>
+    
     var pageView = OnboardingPageView() <~ {
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    init(_ page: OnboardingPage) {
+    init(_ page: OnboardingPage,
+         actions: PublishSubject<OnboardingUIAction>) {
         self.page = page
+        self.actions = actions
         super.init(nibName: nil,
                    bundle: nil)
     }
@@ -37,7 +42,6 @@ class OnboardingPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        isHeroEnabled = true
         generatePageDatasource(for: page)
         layout()
     }
@@ -96,7 +100,14 @@ extension OnboardingPageViewController {
         button.setTitle(title, for: .normal)
         button.backgroundColor = .color(forPalette: .white)
         button.layer.cornerRadius = 8
+        button.titleLabel?.font = .font(forStyle: .title(attribute: .regular))
         button.setTitleColor(.color(forPalette: .primary), for: .normal)
+        button.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.actions.onNext(.actionTypeTapped(self.page.type))
+            })
+            .disposed(by: disposeBag)
         return button
     }
 }
