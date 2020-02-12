@@ -7,10 +7,12 @@
 //
 
 import UIKit
+
+import ThemeManager
+import Hero
 import HFoundation
 
 enum OnboardingComponentType: Int {
-    case image
     case title
     case button
     case description
@@ -35,6 +37,7 @@ class OnboardingPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        isHeroEnabled = true
         generatePageDatasource(for: page)
         layout()
     }
@@ -47,7 +50,6 @@ class OnboardingPageViewController: UIViewController {
     private func generatePageDatasource(for page: OnboardingPage) {
         var datasource: [OnboardingComponentType: UIView] = [:]
          
-        datasource[.image] = generateTitleImageView(with: page.image)
         datasource[.title] = generateTitle(with: page.title)
         datasource[.button] = generateButton(with: page.buttonDatasource.title)
         datasource[.description] = generateDescription(with: page.details)
@@ -59,7 +61,7 @@ class OnboardingPageViewController: UIViewController {
         view.addSubview(pageView)
         
         NSLayoutConstraint.activate([
-            pageView.topAnchor.constraint(equalTo: view.topAnchor),
+            pageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 450),
             pageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             pageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             pageView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
@@ -68,19 +70,13 @@ class OnboardingPageViewController: UIViewController {
 }
 
 extension OnboardingPageViewController {
-    func generateTitleImageView(with image: UIImage)-> UIImageView {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = image
-        return imageView
-    }
-    
     func generateTitle(with copy: String)-> UILabel {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
         label.text = copy
         label.textColor = .white
+        label.font = .font(forStyle: .headline(attribute: .bold))
         return label
     }
     
@@ -89,7 +85,8 @@ extension OnboardingPageViewController {
         label.numberOfLines = 0
         label.text = copy ?? ""
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = .color(forPalette: .grey300)
+        label.font = .font(forStyle: .subtitle(attribute: .bold))
         return label
     }
     
@@ -97,6 +94,9 @@ extension OnboardingPageViewController {
                         icon: UIImage? = nil)-> UIButton {
         let button = UIButton()
         button.setTitle(title, for: .normal)
+        button.backgroundColor = .color(forPalette: .white)
+        button.layer.cornerRadius = 8
+        button.setTitleColor(.color(forPalette: .primary), for: .normal)
         return button
     }
 }

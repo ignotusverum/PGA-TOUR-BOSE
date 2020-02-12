@@ -52,17 +52,20 @@ class OnboardingPageView: UIView {
         addSubview(scrollView)
         scrollView.addSubview(stackView)
         
-        backgroundColor = UIColor.init(patternImage: Asset.gradientBackground.image)
+        backgroundColor = .clear
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.isScrollEnabled = false
         
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor,
                                             constant: 90),
             scrollView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor,
+                                                constant: 40),
+            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor,
+                                                 constant: -40)
         ])
         
         NSLayoutConstraint.activate([
@@ -84,14 +87,12 @@ class OnboardingPageView: UIView {
                          stackView: stackView)
             
             switch item.key {
-            case .image:
-                NSLayoutConstraint.activate([view.heightAnchor.constraint(equalToConstant: 260)])
-                stackView.setCustomSpacing(120,
+            case .title:
+                stackView.setCustomSpacing(40,
                                            after: view)
-            case .title,
-                 .button,
+            case .button,
                  .description:
-                stackView.setCustomSpacing(40.0,
+                stackView.setCustomSpacing(20.0,
                                            after: view)
             }
         }
@@ -106,11 +107,18 @@ class OnboardingPageView: UIView {
         item.translatesAutoresizingMaskIntoConstraints = false
         
         switch type {
-        case .image:
+            case .title:
             NSLayoutConstraint.activate([
                 item.rightAnchor.constraint(equalTo: stackView.rightAnchor),
-                item.widthAnchor.constraint(equalTo: stackView.widthAnchor,
-                                            multiplier: 0.85)
+                item.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
+                item.heightAnchor.constraint(equalToConstant: 125)
+            ])
+            
+        case .button:
+            NSLayoutConstraint.activate([
+                item.rightAnchor.constraint(equalTo: stackView.rightAnchor),
+                item.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
+                item.heightAnchor.constraint(equalToConstant: 50)
             ])
             
         default:

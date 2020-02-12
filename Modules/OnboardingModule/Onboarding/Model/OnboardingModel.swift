@@ -16,7 +16,7 @@ struct OnboardingModel {
                            type: .location,
                            buttonDatasource: OnboardingButtonDatasource(title: "Allow location access",
                                                                         image: Asset.iconLocation.image),
-                           details: "When prompted, please select \"Always Allow"),
+                           details: "When prompted, please select \"Always Allow\""),
             OnboardingPage(title: "Please connect to your Bose Frames.",
                            image: Asset.iconGlasses.image,
                            type: .bluetooth,

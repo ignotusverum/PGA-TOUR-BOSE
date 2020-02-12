@@ -8,6 +8,7 @@
 
 import UIKit
 import MERLin
+import ThemeManager
 
 @UIApplicationMain
 class AppDelegate:
@@ -33,6 +34,8 @@ class AppDelegate:
         /// Modules + Router
         moduleManager = BaseModuleManager()
         router = TabBarControllerRouter(withFactory: moduleManager)
+        
+        ThemeContainer.defaultTheme = GlobalTheme()
         
         let eventsListeners: [AnyEventsListener] = [
             MainRoutingListenerAggregator(withRouter: router),

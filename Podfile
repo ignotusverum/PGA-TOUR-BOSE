@@ -4,6 +4,7 @@ use_modular_headers!
 inhibit_all_warnings! # supresses pods project warnings
 
 def common
+  pod 'Hero'
   pod 'MERLin'
   pod 'RxDataSources'
   pod 'SwiftGen', '~> 5.3.0'
@@ -18,6 +19,5 @@ abstract_target 'Modules' do
   
   target 'HFoundation'
   target 'OnboardingModule'
-  target 'PageContainerModule'
 end
 

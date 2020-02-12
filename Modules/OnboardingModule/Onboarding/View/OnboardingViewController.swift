@@ -32,12 +32,40 @@ class OnboardingViewController: PageViewController {
         tabBarController?.tabBar.isHidden = true
         navigationController?.navigationBar.isHidden = true
         
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = Asset.gradientBackground.image
+        backgroundImage.contentMode = .scaleAspectFill
+        view.insertSubview(backgroundImage,
+                           at: 0)
+        
+        let headerImage = generateTitleImageView(with: viewModel.model.pages.first!.image)
+        headerImage.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(headerImage)
+        
+        NSLayoutConstraint.activate([
+            headerImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+                                             constant: 130),
+            headerImage.heightAnchor.constraint(equalToConstant: 230),
+            headerImage.widthAnchor.constraint(equalTo: view.widthAnchor,
+                                               multiplier: 0.85),
+            headerImage.rightAnchor.constraint(equalTo: view.rightAnchor,
+                                               constant: 15)
+        ])
+        
         bindViewModel()
     }
     
+    func generateTitleImageView(with image: UIImage)-> UIImageView {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        
+        return imageView
+    }
+    
+    
     private func bindViewModel() {
         let states = viewModel.transform(input: actions).publish()
-        
         states.capture(case: OnboardingState.pages)
             .asDriverIgnoreError()
             .drive(onNext: { [weak self] pages in

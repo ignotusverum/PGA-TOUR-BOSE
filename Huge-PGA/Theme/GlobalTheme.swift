@@ -50,7 +50,7 @@ private extension ThemeFontStyle {
         case .small: return 11
         case .title: return 13
         case .subtitle: return 15
-        case .headline: return 18
+        case .headline: return 30
         case .navigationTitle: return 20
         }
     }

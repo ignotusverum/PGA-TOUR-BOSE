@@ -626,8 +626,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A18BC0923F310D5006205C8 /* Build configuration list for PBXNativeTarget "OnboardingModule" */;
 			buildPhases = (
-				5A18BC5123F36CBF006205C8 /* swiftgen */,
 				8129BD8F3510460E61A3A91B /* [CP] Check Pods Manifest.lock */,
+				5A18BC5123F36CBF006205C8 /* swiftgen */,
 				5A18BBFB23F310D4006205C8 /* Headers */,
 				5A18BBFC23F310D4006205C8 /* Sources */,
 				5A18BBFD23F310D4006205C8 /* Frameworks */,
@@ -665,8 +665,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A535FEC23F3048A007B3FF1 /* Build configuration list for PBXNativeTarget "Huge-PGA" */;
 			buildPhases = (
-				5A18BC5323F36D16006205C8 /* swiftgen */,
 				EC314007FAAE536A91F1A7B8 /* [CP] Check Pods Manifest.lock */,
+				5A18BC5323F36D16006205C8 /* swiftgen */,
 				5A535FD423F30488007B3FF1 /* Sources */,
 				5A535FD523F30488007B3FF1 /* Frameworks */,
 				5A535FD623F30488007B3FF1 /* Resources */,
