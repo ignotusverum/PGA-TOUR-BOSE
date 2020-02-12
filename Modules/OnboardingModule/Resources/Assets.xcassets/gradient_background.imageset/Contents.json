@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "glasses.pdf"
+      "filename" : "gradient_background.pdf"
     }
   ],
   "info" : {
@@ -10,7 +10,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "compression-type" : "lossless",
     "template-rendering-intent" : "original"
   }
 }

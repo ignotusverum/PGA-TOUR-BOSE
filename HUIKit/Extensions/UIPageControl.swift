@@ -9,7 +9,7 @@
 import UIKit
 
 public class PageControl: UIPageControl {
-    var borderColor: UIColor = .clear
+    var borderColor: UIColor = .white
     
     override public var currentPage: Int {
         didSet {

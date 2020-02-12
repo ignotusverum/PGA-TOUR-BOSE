@@ -18,7 +18,6 @@ enum OnboardingComponentType: Int {
 
 class OnboardingPageViewController: UIViewController {
     var page: OnboardingPage
-    
     var pageView = OnboardingPageView() <~ {
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -38,6 +37,11 @@ class OnboardingPageViewController: UIViewController {
         
         generatePageDatasource(for: page)
         layout()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barStyle = .black
     }
     
     private func generatePageDatasource(for page: OnboardingPage) {

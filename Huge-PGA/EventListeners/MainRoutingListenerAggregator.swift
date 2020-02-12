@@ -20,6 +20,7 @@ class MainRoutingListenerAggregator: ModuleEventsListenersAggregator {
     
     init(withRouter router: Router) {
         moduleListeners = [
+            OnboardingListener(router),
         ]
     }
 }

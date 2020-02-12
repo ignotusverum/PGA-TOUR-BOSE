@@ -13,11 +13,7 @@ public class OnboardingModuleContext: ModuleContextProtocol {
     public typealias ModuleType = OnboardingModule
     public var routingContext: String
     
-    public var datasource: [OnboardingPage]
-    
-    public init(routingContext: String,
-                datasource: [OnboardingPage]) {
-        self.datasource = datasource
+    public init(routingContext: String) {
         self.routingContext = routingContext
     }
     
@@ -42,6 +38,11 @@ public class OnboardingModule: ModuleProtocol, EventsProducer {
     }
     
     public func unmanagedRootViewController() -> UIViewController {
-        return UIViewController()
+        let model = OnboardingModel()
+        let viewModel = OnboardingViewModel(model: model,
+                                            events: _events)
+        let view = OnboardingViewController(with: viewModel)
+        
+        return view
     }
 }

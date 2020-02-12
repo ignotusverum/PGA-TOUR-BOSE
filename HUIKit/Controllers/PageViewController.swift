@@ -22,7 +22,7 @@ open class PageViewController: UIPageViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
         
@@ -44,16 +44,13 @@ open class PageViewController: UIPageViewController {
     private func decoratePageControl() {
         let pc = PageControl.appearance(whenContainedInInstancesOf: [PageViewController.self])
         pc.currentPageIndicatorTintColor = .white
-        pc.borderColor = .white
         pc.pageIndicatorTintColor = .clear
     }
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
     public func pageViewController(_: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = items.firstIndex(of: viewController) else {
-            return nil
-        }
+        guard let viewControllerIndex = items.firstIndex(of: viewController) else { return nil }
         
         let previousIndex = viewControllerIndex - 1
         
@@ -61,25 +58,15 @@ extension PageViewController: UIPageViewControllerDataSource {
             return items.last
         }
         
-        guard items.count > previousIndex else {
-            return nil
-        }
-        
         return items[previousIndex]
     }
     
     public func pageViewController(_: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = items.firstIndex(of: viewController) else {
-            return nil
-        }
+        guard let viewControllerIndex = items.firstIndex(of: viewController) else { return nil }
         
         let nextIndex = viewControllerIndex + 1
         guard items.count != nextIndex else {
             return items.first
-        }
-        
-        guard items.count > nextIndex else {
-            return nil
         }
         
         return items[nextIndex]

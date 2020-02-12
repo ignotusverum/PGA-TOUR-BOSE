@@ -26,6 +26,15 @@ class OnboardingViewController: PageViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tabBarController?.tabBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
+        
+        bindViewModel()
+    }
+    
     private func bindViewModel() {
         let states = viewModel.transform(input: actions).publish()
         

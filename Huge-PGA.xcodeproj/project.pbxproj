@@ -37,6 +37,8 @@
 		5A18BC5023F36C7D006205C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A18BC4F23F36C7D006205C8 /* Assets.xcassets */; };
 		5A18BC5523F36DDE006205C8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5423F36DDE006205C8 /* Assets.swift */; };
 		5A18BC5923F44FD8006205C8 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5823F44FD8006205C8 /* OnboardingPageView.swift */; };
+		5A18BC5C23F45321006205C8 /* OnboardingListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5B23F45321006205C8 /* OnboardingListener.swift */; };
+		5A18BC5F23F45335006205C8 /* OnboardingSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5E23F45335006205C8 /* OnboardingSetup.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -129,6 +131,8 @@
 		5A18BC4F23F36C7D006205C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A18BC5423F36DDE006205C8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		5A18BC5823F44FD8006205C8 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		5A18BC5B23F45321006205C8 /* OnboardingListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingListener.swift; sourceTree = "<group>"; };
+		5A18BC5E23F45335006205C8 /* OnboardingSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSetup.swift; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 		5A18BBCF23F306A1006205C8 /* EventListeners */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BC5A23F4530B006205C8 /* MainRoutingListeners */,
 				5A18BBD023F306A9006205C8 /* MainRoutingListenerAggregator.swift */,
 				5A18BBD223F3071B006205C8 /* AppDelegateRoutingEventsListener.swift */,
 			);
@@ -362,6 +367,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5A18BC5A23F4530B006205C8 /* MainRoutingListeners */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC5B23F45321006205C8 /* OnboardingListener.swift */,
+			);
+			path = MainRoutingListeners;
+			sourceTree = "<group>";
+		};
+		5A18BC5D23F4532E006205C8 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC5E23F45335006205C8 /* OnboardingSetup.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
 		5A535FCF23F30488007B3FF1 = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +410,7 @@
 		5A535FDA23F30488007B3FF1 /* Huge-PGA */ = {
 			isa = PBXGroup;
 			children = (
+				5A18BC5D23F4532E006205C8 /* Routes */,
 				5A18BBCF23F306A1006205C8 /* EventListeners */,
 				5A18BBCC23F3063F006205C8 /* Router */,
 				5A535FDB23F30488007B3FF1 /* AppDelegate.swift */,
@@ -769,9 +791,11 @@
 			files = (
 				5A18BBD123F306A9006205C8 /* MainRoutingListenerAggregator.swift in Sources */,
 				5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */,
+				5A18BC5C23F45321006205C8 /* OnboardingListener.swift in Sources */,
 				5A18BBCE23F30649006205C8 /* TabbarControllerRouter.swift in Sources */,
 				5A18BBD323F3071B006205C8 /* AppDelegateRoutingEventsListener.swift in Sources */,
 				5A18BBCB23F3060C006205C8 /* AppDelegateEvents.swift in Sources */,
+				5A18BC5F23F45335006205C8 /* OnboardingSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,9 @@ class TabBarControllerRouter: Router {
         let tabbarController = UITabBarController()
         guard let viewControllerFactory = viewControllersFactory else { return tabbarController }
         
-        let matchesNavigationController = UINavigationController(rootViewController: UIViewController())
+        let viewController = viewControllerFactory.viewController(for: PresentableRoutingStep(withStep: .onboarding(), presentationMode: .none))
+        
+        let matchesNavigationController = UINavigationController(rootViewController: viewController)
         tabbarController.viewControllers = [matchesNavigationController]
         
         AppDelegate.shared.window?.transitionToRootController(tabbarController)
