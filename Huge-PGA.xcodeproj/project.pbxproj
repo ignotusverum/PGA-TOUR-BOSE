@@ -39,6 +39,19 @@
 		5A18BC5923F44FD8006205C8 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5823F44FD8006205C8 /* OnboardingPageView.swift */; };
 		5A18BC5C23F45321006205C8 /* OnboardingListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5B23F45321006205C8 /* OnboardingListener.swift */; };
 		5A18BC5F23F45335006205C8 /* OnboardingSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC5E23F45335006205C8 /* OnboardingSetup.swift */; };
+		5A18BC6A23F45DBF006205C8 /* ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A18BC6823F45DBF006205C8 /* ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A18BC6D23F45DBF006205C8 /* ThemeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC6623F45DBF006205C8 /* ThemeManager.framework */; };
+		5A18BC6E23F45DBF006205C8 /* ThemeManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A18BC6623F45DBF006205C8 /* ThemeManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A18BC7323F45DCA006205C8 /* ThemeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7223F45DCA006205C8 /* ThemeContainer.swift */; };
+		5A18BC7523F45DD1006205C8 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7423F45DD1006205C8 /* ThemeProtocol.swift */; };
+		5A18BC7723F45DD6006205C8 /* ThemeFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7623F45DD6006205C8 /* ThemeFontStyle.swift */; };
+		5A18BC7923F45DE1006205C8 /* ThemeColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7823F45DE1006205C8 /* ThemeColorPalette.swift */; };
+		5A18BC7B23F45DE7006205C8 /* AppearanceRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7A23F45DE7006205C8 /* AppearanceRule.swift */; };
+		5A18BC7D23F45DED006205C8 /* UIWindow+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7C23F45DED006205C8 /* UIWindow+Theme.swift */; };
+		5A18BC8023F45E2E006205C8 /* UIColors+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC7F23F45E2E006205C8 /* UIColors+Hex.swift */; };
+		5A18BC8223F45E34006205C8 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8123F45E34006205C8 /* UIColor+Theme.swift */; };
+		5A18BC8423F45E39006205C8 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8323F45E39006205C8 /* UIFont+Theme.swift */; };
+		5A18BC8623F45E3F006205C8 /* UILabel+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18BC8523F45E3F006205C8 /* UILabel+Theme.swift */; };
 		5A535FDC23F30488007B3FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A535FDB23F30488007B3FF1 /* AppDelegate.swift */; };
 		5A535FE523F3048A007B3FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE423F3048A007B3FF1 /* Assets.xcassets */; };
 		5A535FE823F3048A007B3FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A535FE623F3048A007B3FF1 /* LaunchScreen.storyboard */; };
@@ -76,6 +89,13 @@
 			remoteGlobalIDString = 5A18BBD823F308BC006205C8;
 			remoteInfo = HFoundation;
 		};
+		5A18BC6B23F45DBF006205C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A535FD023F30488007B3FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A18BC6523F45DBF006205C8;
+			remoteInfo = ThemeManager;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +105,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5A18BC6E23F45DBF006205C8 /* ThemeManager.framework in Embed Frameworks */,
 				5A18BC0823F310D4006205C8 /* OnboardingModule.framework in Embed Frameworks */,
 				5A18BBF323F308C5006205C8 /* HUIKit.framework in Embed Frameworks */,
 				5A18BBE123F308BC006205C8 /* HFoundation.framework in Embed Frameworks */,
@@ -133,6 +154,19 @@
 		5A18BC5823F44FD8006205C8 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		5A18BC5B23F45321006205C8 /* OnboardingListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingListener.swift; sourceTree = "<group>"; };
 		5A18BC5E23F45335006205C8 /* OnboardingSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSetup.swift; sourceTree = "<group>"; };
+		5A18BC6623F45DBF006205C8 /* ThemeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThemeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A18BC6823F45DBF006205C8 /* ThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		5A18BC6923F45DBF006205C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A18BC7223F45DCA006205C8 /* ThemeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeContainer.swift; sourceTree = "<group>"; };
+		5A18BC7423F45DD1006205C8 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		5A18BC7623F45DD6006205C8 /* ThemeFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFontStyle.swift; sourceTree = "<group>"; };
+		5A18BC7823F45DE1006205C8 /* ThemeColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPalette.swift; sourceTree = "<group>"; };
+		5A18BC7A23F45DE7006205C8 /* AppearanceRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceRule.swift; sourceTree = "<group>"; };
+		5A18BC7C23F45DED006205C8 /* UIWindow+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Theme.swift"; sourceTree = "<group>"; };
+		5A18BC7F23F45E2E006205C8 /* UIColors+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Hex.swift"; sourceTree = "<group>"; };
+		5A18BC8123F45E34006205C8 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		5A18BC8323F45E39006205C8 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
+		5A18BC8523F45E3F006205C8 /* UILabel+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Theme.swift"; sourceTree = "<group>"; };
 		5A535FD823F30488007B3FF1 /* Huge-PGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Huge-PGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A535FDB23F30488007B3FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A535FE423F3048A007B3FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +204,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A18BC6323F45DBF006205C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A535FD523F30488007B3FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +218,7 @@
 				5A18BBE023F308BC006205C8 /* HFoundation.framework in Frameworks */,
 				D0F8DCE4CC39D33CBA6A9A7F /* Pods_Huge_PGA.framework in Frameworks */,
 				5A18BBF223F308C5006205C8 /* HUIKit.framework in Frameworks */,
+				5A18BC6D23F45DBF006205C8 /* ThemeManager.framework in Frameworks */,
 				5A18BC0723F310D4006205C8 /* OnboardingModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +425,33 @@
 			path = Routes;
 			sourceTree = "<group>";
 		};
+		5A18BC6723F45DBF006205C8 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC6823F45DBF006205C8 /* ThemeManager.h */,
+				5A18BC7223F45DCA006205C8 /* ThemeContainer.swift */,
+				5A18BC7423F45DD1006205C8 /* ThemeProtocol.swift */,
+				5A18BC7623F45DD6006205C8 /* ThemeFontStyle.swift */,
+				5A18BC7823F45DE1006205C8 /* ThemeColorPalette.swift */,
+				5A18BC7A23F45DE7006205C8 /* AppearanceRule.swift */,
+				5A18BC7C23F45DED006205C8 /* UIWindow+Theme.swift */,
+				5A18BC7E23F45E25006205C8 /* UIKit+Theme */,
+				5A18BC6923F45DBF006205C8 /* Info.plist */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
+		5A18BC7E23F45E25006205C8 /* UIKit+Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5A18BC7F23F45E2E006205C8 /* UIColors+Hex.swift */,
+				5A18BC8123F45E34006205C8 /* UIColor+Theme.swift */,
+				5A18BC8323F45E39006205C8 /* UIFont+Theme.swift */,
+				5A18BC8523F45E3F006205C8 /* UILabel+Theme.swift */,
+			);
+			path = "UIKit+Theme";
+			sourceTree = "<group>";
+		};
 		5A535FCF23F30488007B3FF1 = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +459,7 @@
 				5A535FDA23F30488007B3FF1 /* Huge-PGA */,
 				5A18BBDA23F308BC006205C8 /* HFoundation */,
 				5A18BBEC23F308C5006205C8 /* HUIKit */,
+				5A18BC6723F45DBF006205C8 /* ThemeManager */,
 				5A535FD923F30488007B3FF1 /* Products */,
 				4CFE99A7FAFD08BB98BDF7EA /* Pods */,
 				EFE65AF01C29AEA3BDBC0B54 /* Frameworks */,
@@ -403,6 +473,7 @@
 				5A18BBD923F308BC006205C8 /* HFoundation.framework */,
 				5A18BBEB23F308C5006205C8 /* HUIKit.framework */,
 				5A18BC0023F310D4006205C8 /* OnboardingModule.framework */,
+				5A18BC6623F45DBF006205C8 /* ThemeManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -455,6 +526,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A18BC0423F310D4006205C8 /* OnboardingModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A18BC6123F45DBF006205C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A18BC6A23F45DBF006205C8 /* ThemeManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +598,24 @@
 			productReference = 5A18BC0023F310D4006205C8 /* OnboardingModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5A18BC6523F45DBF006205C8 /* ThemeManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A18BC6F23F45DBF006205C8 /* Build configuration list for PBXNativeTarget "ThemeManager" */;
+			buildPhases = (
+				5A18BC6123F45DBF006205C8 /* Headers */,
+				5A18BC6223F45DBF006205C8 /* Sources */,
+				5A18BC6323F45DBF006205C8 /* Frameworks */,
+				5A18BC6423F45DBF006205C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThemeManager;
+			productName = ThemeManager;
+			productReference = 5A18BC6623F45DBF006205C8 /* ThemeManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5A535FD723F30488007B3FF1 /* Huge-PGA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A535FEC23F3048A007B3FF1 /* Build configuration list for PBXNativeTarget "Huge-PGA" */;
@@ -537,6 +634,7 @@
 				5A18BBDF23F308BC006205C8 /* PBXTargetDependency */,
 				5A18BBF123F308C5006205C8 /* PBXTargetDependency */,
 				5A18BC0623F310D4006205C8 /* PBXTargetDependency */,
+				5A18BC6C23F45DBF006205C8 /* PBXTargetDependency */,
 			);
 			name = "Huge-PGA";
 			productName = "Huge-PGA";
@@ -565,6 +663,10 @@
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
 					};
+					5A18BC6523F45DBF006205C8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
 					5A535FD723F30488007B3FF1 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -587,6 +689,7 @@
 				5A18BBEA23F308C5006205C8 /* HUIKit */,
 				5A18BBD823F308BC006205C8 /* HFoundation */,
 				5A18BBFF23F310D4006205C8 /* OnboardingModule */,
+				5A18BC6523F45DBF006205C8 /* ThemeManager */,
 			);
 		};
 /* End PBXProject section */
@@ -611,6 +714,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A18BC5023F36C7D006205C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A18BC6423F45DBF006205C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +895,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A18BC6223F45DBF006205C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A18BC7323F45DCA006205C8 /* ThemeContainer.swift in Sources */,
+				5A18BC8223F45E34006205C8 /* UIColor+Theme.swift in Sources */,
+				5A18BC7D23F45DED006205C8 /* UIWindow+Theme.swift in Sources */,
+				5A18BC7723F45DD6006205C8 /* ThemeFontStyle.swift in Sources */,
+				5A18BC7523F45DD1006205C8 /* ThemeProtocol.swift in Sources */,
+				5A18BC7B23F45DE7006205C8 /* AppearanceRule.swift in Sources */,
+				5A18BC8623F45E3F006205C8 /* UILabel+Theme.swift in Sources */,
+				5A18BC7923F45DE1006205C8 /* ThemeColorPalette.swift in Sources */,
+				5A18BC8023F45E2E006205C8 /* UIColors+Hex.swift in Sources */,
+				5A18BC8423F45E39006205C8 /* UIFont+Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A535FD423F30488007B3FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -822,6 +949,11 @@
 			target = 5A18BBD823F308BC006205C8 /* HFoundation */;
 			targetProxy = 5A18BC1023F34D1F006205C8 /* PBXContainerItemProxy */;
 		};
+		5A18BC6C23F45DBF006205C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A18BC6523F45DBF006205C8 /* ThemeManager */;
+			targetProxy = 5A18BC6B23F45DBF006205C8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -850,6 +982,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -880,6 +1013,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -908,6 +1042,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -937,6 +1072,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -966,6 +1102,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Modules/OnboardingModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -996,12 +1133,72 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Modules/OnboardingModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vladz.OnboardingModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A18BC7023F45DBF006205C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2N8DEAPWPF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ThemeManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vladz.ThemeManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A18BC7123F45DBF006205C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2N8DEAPWPF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ThemeManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vladz.ThemeManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1134,6 +1331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N8DEAPWPF;
 				INFOPLIST_FILE = "Huge-PGA/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1154,6 +1352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N8DEAPWPF;
 				INFOPLIST_FILE = "Huge-PGA/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1191,6 +1390,15 @@
 			buildConfigurations = (
 				5A18BC0A23F310D5006205C8 /* Debug */,
 				5A18BC0B23F310D5006205C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A18BC6F23F45DBF006205C8 /* Build configuration list for PBXNativeTarget "ThemeManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A18BC7023F45DBF006205C8 /* Debug */,
+				5A18BC7123F45DBF006205C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
