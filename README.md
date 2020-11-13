@@ -14,7 +14,7 @@
 - Open the _.xcworkspace_ file
 - Hit ⌘ + R to run the project
 
-- Update MGLMapboxAccessToken in `Huge-PGA` [info.plist](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Resources/Info.plist)
+- Update MGLMapboxAccessToken in `Huge-PGA` [info.plist](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Resources/Info.plist)
 
 # Main Concepts
 
@@ -22,50 +22,50 @@
 
 ### Huge-PGA
 
-- [AppDelegate](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/AppDelegate.swift)
-  - [AppDelegateRoutingEventsListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/AppDelegateRoutingEventsListener.swift)
-    - [TabBarControllerRouter](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Router/TabbarControllerRouter.swift)
+- [AppDelegate](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/AppDelegate.swift)
+  - [AppDelegateRoutingEventsListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/AppDelegateRoutingEventsListener.swift)
+    - [TabBarControllerRouter](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Router/TabbarControllerRouter.swift)
 
 ### Modules
 
-- [HomeModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/HomeModule/HomeModule.swift)
-  - [HomeSetup](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Routes/HomeSetup.swift)
-    - [HomeListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/MainRoutingListeners/HomeListener.swift)
-- [TutorialListModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialListModule.swift)
-  - [TutorialListSetup](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Routes/TutorialListSetup.swift)
-    - [TutorialListListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/MainRoutingListeners/TutorialListListener.swift)
-- [OnboardingModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/OnboardingModule/OnboardingModule.swift)
-  - [OnboardingSetup](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Routes/OnboardingSetup.swift)
-    - [OnboardingListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/MainRoutingListeners/OnboardingListener.swift)
-- [DiscoveryTutorialModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/DiscoveryTutorialModule/DiscoveryTutorialModule.swift)
-  - [DiscoveryTutorialSetup](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Routes/DiscoveryTutorialSetup.swift)
-    - [DiscoveryTutorialListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/MainRoutingListeners/DiscoveryTutorialListener.swift)
-- [NavigationTutorialModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/NavigationTutorialModule/NavigationTutorialModule.swift)
-  - [NavigationTutorialSetup](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/Routes/NavigationTutorialSetup.swift)
-    - [NavigationTutorialListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/MainRoutingListeners/NavigationTutorialListener.swift)
+- [HomeModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/HomeModule/HomeModule.swift)
+  - [HomeSetup](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Routes/HomeSetup.swift)
+    - [HomeListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/MainRoutingListeners/HomeListener.swift)
+- [TutorialListModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialListModule.swift)
+  - [TutorialListSetup](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Routes/TutorialListSetup.swift)
+    - [TutorialListListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/MainRoutingListeners/TutorialListListener.swift)
+- [OnboardingModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/OnboardingModule/OnboardingModule.swift)
+  - [OnboardingSetup](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Routes/OnboardingSetup.swift)
+    - [OnboardingListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/MainRoutingListeners/OnboardingListener.swift)
+- [DiscoveryTutorialModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/DiscoveryTutorialModule/DiscoveryTutorialModule.swift)
+  - [DiscoveryTutorialSetup](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Routes/DiscoveryTutorialSetup.swift)
+    - [DiscoveryTutorialListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/MainRoutingListeners/DiscoveryTutorialListener.swift)
+- [NavigationTutorialModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/NavigationTutorialModule/NavigationTutorialModule.swift)
+  - [NavigationTutorialSetup](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/Routes/NavigationTutorialSetup.swift)
+    - [NavigationTutorialListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/MainRoutingListeners/NavigationTutorialListener.swift)
 
 ### Module Events
 
-- [Home Module](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/HomeModule/HomeModule.swift#26)
+- [Home Module](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/HomeModule/HomeModule.swift#26)
   - findPlayerTapped
   - pointsOfInterestsTapped
-- [TutorialListModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialListModule.swift#26)
+- [TutorialListModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialListModule.swift#26)
   - skip
   - discovery
   - navigation
-- [OnboardingModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/OnboardingModule/OnboardingModule.swift#30)
-  - changedToType([OnboardingDatasourceType](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/OnboardingModule/Onboarding/Model/OnboardingPage.swift#12))
-  - actionTypeTapped([OnboardingDatasourceType](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/OnboardingModule/Onboarding/Model/OnboardingPage.swift#12))
-- [DiscoveryTutorialModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/DiscoveryTutorialModule/DiscoveryTutorialModule.swift#26)
-  - changedToType([DiscoveryTutorialType](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/DiscoveryTutorialModule/DiscoveryTutorial/ViewModel/DiscoveryTutorialActions.swift#12))
-- [NavigationTutorialModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/NavigationTutorialModule/NavigationTutorialModule.swift#34)
-  - changedToType([NavigatoinTutorialType](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/NavigationTutorialModule/NavigationTutorialModule.swift#12))
+- [OnboardingModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/OnboardingModule/OnboardingModule.swift#30)
+  - changedToType([OnboardingDatasourceType](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/OnboardingModule/Onboarding/Model/OnboardingPage.swift#12))
+  - actionTypeTapped([OnboardingDatasourceType](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/OnboardingModule/Onboarding/Model/OnboardingPage.swift#12))
+- [DiscoveryTutorialModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/DiscoveryTutorialModule/DiscoveryTutorialModule.swift#26)
+  - changedToType([DiscoveryTutorialType](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/DiscoveryTutorialModule/DiscoveryTutorial/ViewModel/DiscoveryTutorialActions.swift#12))
+- [NavigationTutorialModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/NavigationTutorialModule/NavigationTutorialModule.swift#34)
+  - changedToType([NavigatoinTutorialType](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/NavigationTutorialModule/NavigationTutorialModule.swift#12))
 
 ### Global Events
 
-- [WearableEventsListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/BoserWearable/WearableManager.swift#19)
+- [WearableEventsListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/BoserWearable/WearableManager.swift#19)
   - bluetoothStatusChanged(CBPeripheralManagerAuthorizationStatus)
-- [WearableSessionEventsListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/BoserWearable/WearableSessionManager.swift#18)
+- [WearableSessionEventsListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/BoserWearable/WearableSessionManager.swift#18)
   - device(WearableDevice?)
   - event(WearableDeviceEvent)
   - sessionDidOpen
@@ -76,7 +76,7 @@
   - receivedAccelerometer(Vector, VectorAccuracy, SensorTimestamp)
   - trueHeadingDegreesChanged(Double?)
   - receivedRotation(Quaternion, QuaternionAccuracy, SensorTimestamp)
-- [LocationManagerEventsListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/LocationManager/LocationManager.swift#15)
+- [LocationManagerEventsListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/LocationManager/LocationManager.swift#15)
   - locationStatusChanged(CLAuthorizationStatus)
 
 # Architecture
@@ -95,8 +95,8 @@ For networking we chose to use URL session and light abstration for separating u
 
 **Existing Adapters**
 
-- [TournamentAdapter](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Adapters/TournamentAdapter.swift)
-  - [fetch(id: Int)](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Adapters/TournamentAdapter.swift#29) - fetched tournament details by id
+- [TournamentAdapter](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Adapters/TournamentAdapter.swift)
+  - [fetch(id: Int)](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Adapters/TournamentAdapter.swift#29) - fetched tournament details by id
 
 Example of use:
 
@@ -113,23 +113,23 @@ print("[DEBUG] - tournament fetched - \(tournament)")
 
 For decoding we use simple structures that comfort to `Decodable` protocol.
 
-- [Tournament](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Models/Tournament.swift)
-- [Event](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Models/Event.swift)
-- [Course](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Models/Course.swift)
-- [Round](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Models/Round.swift)
-- [Group](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Models/Group.swift)
-- [Player](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Networking/Models/Player.swift)
+- [Tournament](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Models/Tournament.swift)
+- [Event](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Models/Event.swift)
+- [Course](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Models/Course.swift)
+- [Round](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Models/Round.swift)
+- [Group](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Models/Group.swift)
+- [Player](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Networking/Models/Player.swift)
 
 # Additinal Frameworks
 
 We're using [BoseWearable SDK](https://github.com/Bose/BoseWearable-iOS/blob/master/docs/Usage.md) and wrapping main events that coming from sdk to singles, so that we maintain session and device events from listeners:
 
-- [WearableSessionEventsListener.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/GlobalEventsListener/WearableSessionEventsListener.swift)
-- [WearableEventsListener.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/GlobalEventsListener/WearableEventsListener.swift)
+- [WearableSessionEventsListener.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/GlobalEventsListener/WearableSessionEventsListener.swift)
+- [WearableEventsListener.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/GlobalEventsListener/WearableEventsListener.swift)
 
 For routing we're using [Mapbox turn-by-turn navigation](https://www.mapbox.com/use-cases/turn-by-turn-navigation/).
 
-- [Directions Manager](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/Directions/DirectionsManager.swift) - Responsible for presenting MapboxUI and calculating routes.
+- [Directions Manager](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/Directions/DirectionsManager.swift) - Responsible for presenting MapboxUI and calculating routes.
 
 ## Further reading
 
@@ -152,7 +152,7 @@ We're using [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) for code 
 
 ## Adding new global event listener
 
-Create event producer - eg [LocationManager](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/LocationManager/LocationManager.swift)
+Create event producer - eg [LocationManager](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/LocationManager/LocationManager.swift)
 
 ```swift
 public enum LocationManagerEvents: EventProtocol {
@@ -164,11 +164,11 @@ public var events: Observable<LocationManagerEvents> { return _events }
 private let _events = PublishSubject<LocationManagerEvents>()
 ```
 
-1. Add event listener to the main app - https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/GlobalEventsListenerAggregator.swift#23
+1. Add event listener to the main app - https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/GlobalEventsListenerAggregator.swift#23
 
-Please note that we created `GlobalEventsListenerAggregator` to combine multiple streams into one call that's happening here - https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/AppDelegate.swift#51
+Please note that we created `GlobalEventsListenerAggregator` to combine multiple streams into one call that's happening here - https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/AppDelegate.swift#51
 
-2. Add [LocationManagerListener](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Huge-PGA/EventListeners/GlobalEventsListener/LocationManagerEventsListener.swift) and add observers for events described above:
+2. Add [LocationManagerListener](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Huge-PGA/EventListeners/GlobalEventsListener/LocationManagerEventsListener.swift) and add observers for events described above:
 
 ```swift
     func listenEvents(from producer: AnyEventsProducer,
@@ -213,7 +213,7 @@ Add HFoundation to module dependencies - `Build Phases` -> `Dependencies`.
 
 Note: Suggesion would be to create Module with empty `unmanagedRootViewController()-> UIViewController`, then start with actions -> state -> viewModel and then you can switch to view.
 
-For example we're going to work on [TutorialListModule](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule).
+For example we're going to work on [TutorialListModule](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule).
 
 First start `TutorialListModuleContext` that can help us with deeplinks.
 
@@ -272,17 +272,17 @@ After that we need to define our `Movel` `ViewMovel` and `View` - [MVVM](https:/
 
 For model we can simply take following struct that's already populated
 
-- [TutorialListModel.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialList/Model/TutorialListModel.swift)
+- [TutorialListModel.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialList/Model/TutorialListModel.swift)
 
 For Actions(UI and Model) we want to define what are the inputs from our UI or Model that can change our state.
 
-- [TutorialListActions.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialList/ViewModel/TutorialListActions.swift)
+- [TutorialListActions.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialList/ViewModel/TutorialListActions.swift)
 
-In [TutorialListState.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialList/ViewModel/TutorialListState.swift) we are describing what are the states in our module. Also it includes two reducers (UI and Module), but in this example they don't change states.
+In [TutorialListState.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialList/ViewModel/TutorialListState.swift) we are describing what are the states in our module. Also it includes two reducers (UI and Module), but in this example they don't change states.
 
-In [TutorialListViewModel.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialList/ViewModel/TutorialListViewModel.swift) we combining our actions in [feedback loop](https://academy.realm.io/posts/try-swift-nyc-2017-krunoslav-zaher-modern-rxswift-architectures/) and providing side effect (which is call outside of module) when specific events is happening.
+In [TutorialListViewModel.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialList/ViewModel/TutorialListViewModel.swift) we combining our actions in [feedback loop](https://academy.realm.io/posts/try-swift-nyc-2017-krunoslav-zaher-modern-rxswift-architectures/) and providing side effect (which is call outside of module) when specific events is happening.
 
-And in [TutorialListViewController.swift](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialList/View/TutorialListViewController.swift) we defining our UI logic and binding events that coming from them here - https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/Modules/TutorialListModule/TutorialList/View/TutorialListViewController.swift#127
+And in [TutorialListViewController.swift](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialList/View/TutorialListViewController.swift) we defining our UI logic and binding events that coming from them here - https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/Modules/TutorialListModule/TutorialList/View/TutorialListViewController.swift#127
 
 So our `TutorialListModule.swift -> unmanagedRootViewController()..` is going to change to
 
@@ -302,7 +302,7 @@ Note that we can completely ignore feedback loops since in provided Use-Case it 
 
 # TODO:
 
-- [calculated](https://stash.hugeinc.com/projects/HOAK/repos/pgatour-x-bose/browse/HFoundation/BoserWearable/WearableSessionManager.swift#72) rotation degree of wearable, need to calculate if current user `trueHeadingDegrees` is within a range.
+- [calculated](https://github.com/ignotusverum/PGA-TOUR-BOSE/tree/master/HFoundation/BoserWearable/WearableSessionManager.swift#72) rotation degree of wearable, need to calculate if current user `trueHeadingDegrees` is within a range.
 
 - Add text to speech synthesizer with text coming from interest model -
 
