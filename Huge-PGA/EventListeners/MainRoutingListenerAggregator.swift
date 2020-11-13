@@ -20,7 +20,13 @@ class MainRoutingListenerAggregator: ModuleEventsListenersAggregator {
     
     init(withRouter router: Router) {
         moduleListeners = [
+            HomeListener(router),
             OnboardingListener(router),
+            TutorialListListener(router),
+            DiscoveryTutorialListener(router),
+            NavigationTutorialListener(router),
+            PlayerListListener(router),
+            InterestListListener(router)
         ]
     }
 }

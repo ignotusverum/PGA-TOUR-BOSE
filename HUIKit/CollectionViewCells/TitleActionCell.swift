@@ -51,7 +51,7 @@ public class TitleActionCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             actionButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,
-                                              constant: 70),
+                                              constant: 50),
             actionButton.heightAnchor.constraint(equalToConstant: 50),
             actionButton.leadingAnchor.constraint(equalTo: leadingAnchor),
             actionButton.trailingAnchor.constraint(equalTo: trailingAnchor)
@@ -59,7 +59,7 @@ public class TitleActionCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: actionButton.bottomAnchor,
-                                                  constant: 24),
+                                                  constant: 14),
             descriptionLabel.heightAnchor.constraint(equalToConstant: 50),
             descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor)

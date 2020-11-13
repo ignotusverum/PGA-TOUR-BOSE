@@ -6,9 +6,13 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import UIKit
 import MERLin
 import ThemeManager
+import UIKit
+
+import HFoundation
+
+import MapboxDirections
 
 @UIApplicationMain
 class AppDelegate:
@@ -27,8 +31,7 @@ class AppDelegate:
     private let _events = PublishSubject<AppDelegateEvent>()
     
     func application(_ application: UIApplication,
-                     willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-
+                     willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         window = UIWindow()
         
         /// Modules + Router
@@ -37,12 +40,17 @@ class AppDelegate:
         
         ThemeContainer.defaultTheme = GlobalTheme()
         
+        TournamentAdapter.configurator()
+        
+        let globalListener = GlobalEventsListenerAggregator()
         let eventsListeners: [AnyEventsListener] = [
             MainRoutingListenerAggregator(withRouter: router),
             AppDelegateRoutingEventsListener(withRouter: router)
         ]
         
-        moduleManager.addEventsListeners(eventsListeners)
+        moduleManager.addEventsListeners(eventsListeners + [globalListener])
+        
+        globalListener.listenEvents()
         eventsListeners.forEach { $0.listenEvents(from: self) }
         
         _events.onNext(.willFinishLaunching(application: application,
@@ -52,7 +60,7 @@ class AppDelegate:
     }
     
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         return true
     }
 }

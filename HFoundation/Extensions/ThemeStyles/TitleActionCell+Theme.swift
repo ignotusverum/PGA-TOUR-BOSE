@@ -7,6 +7,7 @@
 //
 
 import HUIKit
+import UIKit
 import ThemeManager
 
 public extension TitleActionCell {
@@ -26,6 +27,8 @@ public extension TitleActionCell {
         
         actionButton.layer.cornerRadius = 6
         actionButton.layer.masksToBounds = true
+        
+        actionButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -35, bottom: 0, right: 0)
         
         descriptionLabel.applyLabelStyle(.subtitle(attribute: .regular),
                                          usingTheme: theme,

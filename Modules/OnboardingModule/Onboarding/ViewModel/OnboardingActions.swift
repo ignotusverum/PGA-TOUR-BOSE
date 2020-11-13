@@ -6,14 +6,15 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import MERLin
 import HFoundation
+import MERLin
 
 enum OnboardingUIAction: EventProtocol {
+    case changedToType(OnboardingDatasourceType)
     case actionTypeTapped(OnboardingDatasourceType)
 }
 
-enum OnboardingModelAction: EventProtocol { }
+enum OnboardingModelAction: EventProtocol {}
 
 enum OnboardingActions: EventProtocol {
     case ui(OnboardingUIAction)

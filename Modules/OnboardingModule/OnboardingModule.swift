@@ -6,24 +6,29 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import MERLin
 import HFoundation
+import MERLin
 
 public class OnboardingModuleContext: ModuleContextProtocol {
     public typealias ModuleType = OnboardingModule
     public var routingContext: String
     
-    public init(routingContext: String) {
+    public var switchPageEvent: Observable<Void>
+    
+    public init(routingContext: String,
+                switchPageEvent: Observable<Void>) {
         self.routingContext = routingContext
+        self.switchPageEvent = switchPageEvent
     }
     
-    public func make()-> (AnyModule, UIViewController) {
+    public func make() -> (AnyModule, UIViewController) {
         let module = ModuleType(usingContext: self)
         return (module, module.prepareRootViewController())
     }
 }
 
 public enum OnboardingModuleEvents: EventProtocol {
+    case changedToType(OnboardingDatasourceType)
     case actionTypeTapped(OnboardingDatasourceType)
 }
 
@@ -41,7 +46,8 @@ public class OnboardingModule: ModuleProtocol, EventsProducer {
         let model = OnboardingModel()
         let viewModel = OnboardingViewModel(model: model,
                                             events: _events)
-        let view = OnboardingViewController(with: viewModel)
+        let view = OnboardingViewController(with: viewModel,
+                                            switchPageEvent: context.switchPageEvent)
         
         return view
     }

@@ -17,9 +17,22 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiaWdub3R1c3ZlcnVtIiwiYSI6ImNrNnYxanhyZjBmd3gzZHFwem40ZHc5c3UifQ.uk4p0l8MteUmrcn7VbQ0lw</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Enables wearables pairing feature.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app uses Bluetooth to communicate with Bose Wearable devices</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Enables the point-to-point navigation feature.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
@@ -28,9 +41,10 @@
 	<string>Enables the point-to-point navigation feature.</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>audio</string>
+		<string>bluetooth-central</string>
 		<string>fetch</string>
 		<string>location</string>
-		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -38,6 +52,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

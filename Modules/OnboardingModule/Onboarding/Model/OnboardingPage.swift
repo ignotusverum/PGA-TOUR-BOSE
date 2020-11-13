@@ -6,8 +6,8 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import UIKit
 import MERLin
+import UIKit
 
 public enum OnboardingDatasourceType {
     case location
@@ -15,29 +15,29 @@ public enum OnboardingDatasourceType {
     case confirm
 }
 
-public struct OnboardingButtonDatasource: Equatable {
+struct OnboardingButtonDatasource: Equatable {
     var title: String
     var image: UIImage?
     
-    public init(title: String,
-                image: UIImage? = nil) {
+    init(title: String,
+         image: UIImage? = nil) {
         self.title = title
         self.image = image
     }
 }
 
-public struct OnboardingPage: Equatable {
+struct OnboardingPage: Equatable {
     var title: String
     var image: UIImage
     var details: String?
     var type: OnboardingDatasourceType
     var buttonDatasource: OnboardingButtonDatasource
     
-    public init(title: String,
-                image: UIImage,
-                type: OnboardingDatasourceType,
-                buttonDatasource: OnboardingButtonDatasource,
-                details: String? = nil) {
+    init(title: String,
+         image: UIImage,
+         type: OnboardingDatasourceType,
+         buttonDatasource: OnboardingButtonDatasource,
+         details: String? = nil) {
         self.title = title
         self.image = image
         self.type = type

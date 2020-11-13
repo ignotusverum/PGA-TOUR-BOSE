@@ -46,6 +46,7 @@ internal struct ColorAsset {
 internal enum Asset {
   internal static let gradientBackground = ImageAsset(name: "gradient_background")
   internal static let iconBluetooth = ImageAsset(name: "icon_bluetooth")
+  internal static let iconCheckmark = ImageAsset(name: "icon_checkmark")
   internal static let iconGlasses = ImageAsset(name: "icon_glasses")
   internal static let iconLocation = ImageAsset(name: "icon_location")
 
@@ -55,6 +56,7 @@ internal enum Asset {
   internal static let allImages: [ImageAsset] = [
     gradientBackground,
     iconBluetooth,
+    iconCheckmark,
     iconGlasses,
     iconLocation,
   ]

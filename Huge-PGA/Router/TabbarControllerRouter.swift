@@ -6,8 +6,11 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import MERLin
 import HFoundation
+import MERLin
+
+import CoreLocation
+import RxCoreLocation
 
 class TabBarControllerRouter: Router {
     var viewControllersFactory: ViewControllersFactory?
@@ -25,18 +28,33 @@ class TabBarControllerRouter: Router {
     
     var disposeBag: DisposeBag = DisposeBag()
     
-    func rootViewController(forLaunchOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> UIViewController? {
-        let tabbarController = UITabBarController()
-        guard let viewControllerFactory = viewControllersFactory else { return tabbarController }
+    func rootViewController(forLaunchOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> UIViewController? {
+        guard let viewControllerFactory = viewControllersFactory else { return UIViewController() }
         
-        let viewController = viewControllerFactory.viewController(for: PresentableRoutingStep(withStep: .onboarding(), presentationMode: .none))
+        let locationStatusObserver = LocationManager.shared
+            .events.capture(case: LocationManagerEvents.locationStatusChanged)
+            .filter({ $0 != .notDetermined })
+            .take(1)
+            .toVoid()
         
-        let matchesNavigationController = UINavigationController(rootViewController: viewController)
-        tabbarController.viewControllers = [matchesNavigationController]
+        let wearableSessionObserver = WearableSessionManager.shared
+            .events.capture(case: WearableSessionManagerEvents.device)
+            .compactMap { $0 }
+            .take(1)
+            .toVoid()
         
-        AppDelegate.shared.window?.transitionToRootController(tabbarController)
+        let switchTonextPageObserver = Observable.merge(locationStatusObserver,
+                                                        wearableSessionObserver)
         
-        return tabbarController
+        let viewController = viewControllerFactory.viewController(for: PresentableRoutingStep(withStep: .onboarding(switchPageEvent: switchTonextPageObserver),
+                                                                                              presentationMode: .none))
+        
+        let rootNavigationController = UINavigationController(rootViewController: viewController)
+        
+        AppDelegate.shared.window?.transitionToRootController(rootNavigationController)
+        topViewController = rootNavigationController
+        
+        return rootNavigationController
     }
     
     func showLoadingView() {}
@@ -60,4 +78,3 @@ extension UIWindow {
         }
     }
 }
-

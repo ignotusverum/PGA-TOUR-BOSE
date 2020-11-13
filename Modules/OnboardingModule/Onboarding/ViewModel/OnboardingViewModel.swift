@@ -6,8 +6,8 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import MERLin
 import HFoundation
+import MERLin
 
 protocol OnboardingViewModelProtocol {
     func transform(input: Observable<OnboardingUIAction>) -> Observable<OnboardingState>
@@ -26,8 +26,8 @@ class OnboardingViewModel: OnboardingViewModelProtocol {
     }
     
     func transform(input: Observable<OnboardingUIAction>) -> Observable<OnboardingState> {
-        return transform(input: input,
-                         scheduler: MainScheduler.asyncInstance)
+        transform(input: input,
+                  scheduler: MainScheduler.asyncInstance)
     }
     
     func transform(input: Observable<OnboardingUIAction>,
@@ -40,10 +40,13 @@ class OnboardingViewModel: OnboardingViewModelProtocol {
                                     case let .model(action): return .reduce(state, model: action)
                                     }
         }, feedback: { _ in input.map(OnboardingActions.ui) })
-            .sendSideEffects({ state in
-                input.capture(case: OnboardingUIAction.actionTypeTapped)
-                    .map(OnboardingModuleEvents.actionTypeTapped)
+            .sendSideEffects({ _ in
+                Observable.merge(
+                    input.capture(case: OnboardingUIAction.actionTypeTapped)
+                        .map(OnboardingModuleEvents.actionTypeTapped),
+                    input.capture(case: OnboardingUIAction.changedToType)
+                        .map(OnboardingModuleEvents.changedToType)
+                )
             }, to: events.asObserver())
     }
 }
-

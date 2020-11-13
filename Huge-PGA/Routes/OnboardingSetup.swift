@@ -12,8 +12,10 @@ import MERLin
 typealias OnboardingRouteEvent = OnboardingModuleEvents
 
 extension ModuleRoutingStep {
-    static func onboarding(routingContext: RoutingContextType = .main)-> ModuleRoutingStep {
-        let context = OnboardingModuleContext(routingContext: routingContext.rawValue)
+    static func onboarding(routingContext: RoutingContextType = .main,
+                           switchPageEvent: Observable<Void>)-> ModuleRoutingStep {
+        let context = OnboardingModuleContext(routingContext: routingContext.rawValue,
+                                              switchPageEvent: switchPageEvent)
         return ModuleRoutingStep(withMaker: context)
     }
 }

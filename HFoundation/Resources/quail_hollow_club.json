@@ -1,0 +1,354 @@
+[
+    {
+      "id": 50,
+      "name": "Riverline Park",
+      "type": "park",
+      "start_coords": {
+        "lat": 33.805244,
+        "long": -84.510300
+      },
+      "end_coords": {
+        "lat": 33.803565,
+        "long": -84.507519
+      },
+      "info": null
+    },
+  {
+    "id": 0,
+    "name": "Clubhouse",
+    "type": "building",
+    "start_coords": {
+      "lat": 35.1163751,
+      "long": -80.8425916
+    },
+    "end_coords": {
+      "lat": 35.1163751,
+      "long": -80.8425916
+    },
+    "info": null
+  },
+  {
+    "id": 1,
+    "name": "Hole 1",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.115148,
+      "long": -80.842565
+    },
+    "end_coords": {
+      "lat": 35.112236,
+      "long": -80.845588
+    },
+    "info": {
+      "hole_number": 1,
+      "par": 4,
+      "yards": 524
+    }
+  },
+  {
+    "id": 2,
+    "name": "Hole 2",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.112579,
+      "long": -80.845938
+    },
+    "end_coords": {
+      "lat": 35.11554,
+      "long": -80.843542
+    },
+    "info": {
+      "hole_number": 2,
+      "par": 4,
+      "yards": 452
+    }
+  },
+  {
+    "id": 3,
+    "name": "Hole 3",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.115555,
+      "long": -80.844329
+    },
+    "end_coords": {
+      "lat": 35.11844,
+      "long": -80.847535
+    },
+    "info": {
+      "hole_number": 3,
+      "par": 4,
+      "yards": 483
+    }
+  },
+  {
+    "id": 4,
+    "name": "Hole 4",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.118288,
+      "long": -80.848166
+    },
+    "end_coords": {
+      "lat": 35.117082,
+      "long": -80.847072
+    },
+    "info": {
+      "hole_number": 4,
+      "par": 3,
+      "yards": 184
+    }
+  },
+  {
+    "id": 5,
+    "name": "Hole 5",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.116833,
+      "long": -80.84821
+    },
+    "end_coords": {
+      "lat": 35.114758,
+      "long": -80.844716
+    },
+    "info": {
+      "hole_number": 5,
+      "par": 4,
+      "yards": 449
+    }
+  },
+  {
+    "id": 6,
+    "name": "Hole 6",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.114611,
+      "long": -80.845231
+    },
+    "end_coords": {
+      "lat": 35.11527,
+      "long": -80.847626
+    },
+    "info": {
+      "hole_number": 6,
+      "par": 3,
+      "yards": 249
+    }
+  },
+  {
+    "id": 7,
+    "name": "Hole 7",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.115975,
+      "long": -80.848586
+    },
+    "end_coords": {
+      "lat": 35.111866,
+      "long": -80.846829
+    },
+    "info": {
+      "hole_number": 7,
+      "par": 5,
+      "yards": 546
+    }
+  },
+  {
+    "id": 8,
+    "name": "Hole 8",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.112078,
+      "long": -80.8464
+    },
+    "end_coords": {
+      "lat": 35.110228,
+      "long": -80.843745
+    },
+    "info": {
+      "hole_number": 8,
+      "par": 4,
+      "yards": 346
+    }
+  },
+  {
+    "id": 9,
+    "name": "Hole 9",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.11102,
+      "long": -80.843015
+    },
+    "end_coords": {
+      "lat": 35.114856,
+      "long": -80.842022
+    },
+    "info": {
+      "hole_number": 9,
+      "par": 4,
+      "yards": 505
+    }
+  },
+  {
+    "id": 10,
+    "name": "Hole 10",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.116016,
+      "long": -80.841634
+    },
+    "end_coords": {
+      "lat": 35.11161,
+      "long": -80.83892
+    },
+    "info": {
+      "hole_number": 10,
+      "par": 5,
+      "yards": 592
+    }
+  },
+  {
+    "id": 11,
+    "name": "Hole 11",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.111193,
+      "long": -80.839205
+    },
+    "end_coords": {
+      "lat": 35.109766,
+      "long": -80.84315
+    },
+    "info": {
+      "hole_number": 11,
+      "par": 4,
+      "yards": 462
+    }
+  },
+  {
+    "id": 12,
+    "name": "Hole 12",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.109111,
+      "long": -80.843113
+    },
+    "end_coords": {
+      "lat": 35.110709,
+      "long": -80.838906
+    },
+    "info": {
+      "hole_number": 12,
+      "par": 4,
+      "yards": 456
+    }
+  },
+  {
+    "id": 13,
+    "name": "Hole 13",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.111018,
+      "long": -80.838767
+    },
+    "end_coords": {
+      "lat": 35.111372,
+      "long": -80.83677
+    },
+    "info": {
+      "hole_number": 13,
+      "par": 3,
+      "yards": 208
+    }
+  },
+  {
+    "id": 14,
+    "name": "Hole 14",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.111421,
+      "long": -80.836168
+    },
+    "end_coords": {
+      "lat": 35.114149,
+      "long": -80.836426
+    },
+    "info": {
+      "hole_number": 14,
+      "par": 4,
+      "yards": 344
+    }
+  },
+  {
+    "id": 15,
+    "name": "Hole 15",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.114213,
+      "long": -80.835798
+    },
+    "end_coords": {
+      "lat": 35.117142,
+      "long": -80.83956
+    },
+    "info": {
+      "hole_number": 15,
+      "par": 5,
+      "yards": 577
+    }
+  },
+  {
+    "id": 16,
+    "name": "Hole 16",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.117435,
+      "long": -80.840686
+    },
+    "end_coords": {
+      "lat": 35.114206,
+      "long": -80.837622
+    },
+    "info": {
+      "hole_number": 16,
+      "par": 4,
+      "yards": 506
+    }
+  },
+  {
+    "id": 17,
+    "name": "Hole 17",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.114906,
+      "long": -80.838425
+    },
+    "end_coords": {
+      "lat": 35.113119,
+      "long": -80.838007
+    },
+    "info": {
+      "hole_number": 17,
+      "par": 3,
+      "yards": 223
+    }
+  },
+  {
+    "id": 18,
+    "name": "Hole 18",
+    "type": "hole",
+    "start_coords": {
+      "lat": 35.112972,
+      "long": -80.839058
+    },
+    "end_coords": {
+      "lat": 35.116732,
+      "long": -80.840995
+    },
+    "info": {
+      "hole_number": 18,
+      "par": 4,
+      "yards": 494
+    }
+  }
+]

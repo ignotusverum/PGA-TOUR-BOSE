@@ -6,23 +6,25 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import MERLin
 import HFoundation
+import MERLin
 
 enum OnboardingState: CaseAccessible, Equatable {
     case pages([OnboardingPage])
     
     static func reduce(_ state: OnboardingState,
-                       action: OnboardingUIAction)-> OnboardingState {
+                       action: OnboardingUIAction) -> OnboardingState {
         switch (state, action) {
         // Not changing state
         case (.pages(_),
-              .actionTypeTapped(_)): return state
+              .actionTypeTapped(_)),
+             (.pages(_),
+              .changedToType(_)): return state
         }
     }
     
     static func reduce(_ state: OnboardingState,
-                       model: OnboardingModelAction)-> OnboardingState {
+                       model: OnboardingModelAction) -> OnboardingState {
         state
     }
 }

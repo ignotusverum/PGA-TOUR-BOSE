@@ -13,9 +13,9 @@ private extension ThemeColorPalette {
     var color: UIColor {
         switch self {
         case .white: return .white
-        case .grey100: return .color(fromHex: "#ebecf2")
+        case .grey100: return .color(fromHex: "#eff0ef")
         case .grey300: return .color(fromHex: "#9c9b9e")
-        case .black: return .color(fromHex: "#50555d")
+        case .black: return .color(fromHex: "#000000")
         case .primary: return .color(fromHex: "#003771")
         case .error: return .color(fromHex: "#EF0A00")
         case .success: return .color(fromHex: "#45e588")
@@ -24,12 +24,12 @@ private extension ThemeColorPalette {
 }
 
 extension UIFont {
-    func withTraits(traits:UIFontDescriptor.SymbolicTraits...) -> UIFont {
-        let descriptor = self.fontDescriptor
+    func withTraits(traits: UIFontDescriptor.SymbolicTraits...) -> UIFont {
+        let descriptor = fontDescriptor
             .withSymbolicTraits(UIFontDescriptor.SymbolicTraits(traits))
         return UIFont(descriptor: descriptor!, size: 0)
     }
-
+    
     func bold() -> UIFont {
         return withTraits(traits: .traitBold)
     }
@@ -85,12 +85,12 @@ class GlobalTheme: ThemeProtocol {
         ], for: .normal)
         
         return AppearanceRuleSet {
-                PropertyAppearanceRule<UINavigationBar, UIColor?>(keypath: \.tintColor, value: color(forColorPalette: .primary))
-                UINavigationBar[\.barTintColor, color(forColorPalette: .primary)]
-                UINavigationBar[\.titleTextAttributes, [
-                    NSAttributedString.Key.foregroundColor: color(forColorPalette: .white),
-                    NSAttributedString.Key.font: font(forStyle: .navigationTitle(attribute: .bold))
-                ]]
+            PropertyAppearanceRule<UINavigationBar, UIColor?>(keypath: \.tintColor, value: color(forColorPalette: .primary))
+            UINavigationBar[\.barTintColor, color(forColorPalette: .primary)]
+            UINavigationBar[\.titleTextAttributes, [
+                NSAttributedString.Key.foregroundColor: color(forColorPalette: .white),
+                NSAttributedString.Key.font: font(forStyle: .navigationTitle(attribute: .bold))
+            ]]
         }
     }()
     
@@ -118,4 +118,3 @@ class GlobalTheme: ThemeProtocol {
         return label
     }
 }
-

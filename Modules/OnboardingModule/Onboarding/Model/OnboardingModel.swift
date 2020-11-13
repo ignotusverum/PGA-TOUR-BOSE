@@ -6,12 +6,10 @@
 //  Copyright © 2020 Vlad Z. All rights reserved.
 //
 
-import MERLin
-
 struct OnboardingModel {
     var pages: [OnboardingPage] {
         [
-            OnboardingPage(title: "Take your PGA Tour experience to the next level.",
+            OnboardingPage(title: "Take your PGA TOUR experience to the next level.",
                            image: Asset.iconGlasses.image,
                            type: .location,
                            buttonDatasource: OnboardingButtonDatasource(title: "Allow location access",
@@ -29,4 +27,3 @@ struct OnboardingModel {
         ]
     }
 }
-
